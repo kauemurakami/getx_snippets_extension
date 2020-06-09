@@ -1,0 +1,20 @@
+{
+    "name": "get-snippets",
+    "displayName": "get_snippets",
+    "description": "Extensão para auxiliar/acelerar o processo de desenvolvimento com a biblioteca get",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
