@@ -1,1 +1,44 @@
-{}
+{
+    "GetController Snippet" : {
+      "prefix" : "!getcontroller",
+      "body": [
+        "import 'import 'package:get/get.dart';",
+        "",
+        "class ${1:Subject}Controller extends RxController {",
+        "",
+        "\t final Repository repository;",
+        "",
+        "\t $1Controller({@required this.repository}) : assert(respository != null)",
+        "",
+        "\t final String text = 'hello'.obs;",
+        "",
+        "\t set text(value) => text.value = value;",
+        "\t get text => this.text.value;",
+        "}"
+
+      ],
+      "description": "Generate GetController."
+    },
+    "GetPage Snippet" : {
+      "prefix" : "!getpage",
+      "body": [
+
+      ],
+      "description": "Generate Page."
+    },
+    "GetRoutes Snippet" : {
+      "prefix" : "!getroutes",
+      "body": [
+
+      ],
+      "description": "Generate file Routes."
+    },
+    "GetModel Snippet" : {
+      "prefix" : "!getmodel",
+      "body": [
+
+      ],
+      "description": "Generate file Model."
+    },
+    
+}
