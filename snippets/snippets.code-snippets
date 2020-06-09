@@ -5,7 +5,7 @@
         "import 'import package:get/get.dart';",
         "import 'package:meta/meta.dart';",
         "",
-        "class ${1:Subject}Controller extends RxController {",
+        "class ${1:Name}Controller extends RxController {",
         "",
         "\t final $1Repository repository;",
         "",
@@ -40,14 +40,37 @@
     "GetPage Snippet" : {
       "prefix" : "getpage",
       "body": [
+        "import 'package:flutter/material.dart';",
+        "import 'package:get/get.dart';",
+        "import 'package:http/http.dart' as http;",
 
+        "class ${1:Name}Page extends StatelessWidget {",
+        "//final $1Repository repository = $1Repository(apiClient: apiClient(httpClient: http.Client()));",
+        "",
+        "@override",
+        "Widget build(BuildContext context) {",
+        "",
+        "return Scaffold(",
+        "appBar: AppBar(title: Text('$1')),",
+        "body: Container(",
+        "\t child: GetX<$1>(",
+        "\t\t builder: (_){",
+        "\t\t\t return Container();",
+        "\t\t }",
+        "\t\t),",
+        "\t),",
+        ");",
+        "}"
       ],
       "description": "Generate Page."
     },
     "GetModel Snippet" : {
-      "prefix" : "!getmodel",
+      "prefix" : "getmodel",
       "body": [
-
+        "class Client {",
+        "",
+        "int id",
+        "}",
       ],
       "description": "Generate file Model."
     },
