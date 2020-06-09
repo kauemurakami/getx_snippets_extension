@@ -1,14 +1,15 @@
 {
     "GetController Snippet" : {
-      "prefix" : "!getcontroller",
+      "prefix" : "getcontroller",
       "body": [
-        "import 'import 'package:get/get.dart';",
+        "import 'import package:get/get.dart';",
+        "import 'package:meta/meta.dart';",
         "",
         "class ${1:Subject}Controller extends RxController {",
         "",
-        "\t final Repository repository;",
+        "\t final $1Repository repository;",
         "",
-        "\t $1Controller({@required this.repository}) : assert(respository != null)",
+        "\t $1Controller({@required this.repository}) : assert(repository != null)",
         "",
         "\t final String text = 'hello'.obs;",
         "",
@@ -19,19 +20,29 @@
       ],
       "description": "Generate GetController."
     },
+    "GetRoutes Snippet" : {
+      "prefix" : "getroutes",
+      "body": [
+        "import 'import package:get/get.dart';",
+        "",
+        "class MyRoutes {",
+        "",
+        "static final routes = {",
+        "\t '/' : GetRoute(page: MyHomePage()),",
+        "\t '/second' : GetRoute(page: SecondPage()),",
+        "};",
+        
+        "}"
+      ],
+      "description": "Generate GetRoutes."
+    },
+
     "GetPage Snippet" : {
-      "prefix" : "!getpage",
+      "prefix" : "getpage",
       "body": [
 
       ],
       "description": "Generate Page."
-    },
-    "GetRoutes Snippet" : {
-      "prefix" : "!getroutes",
-      "body": [
-
-      ],
-      "description": "Generate file Routes."
     },
     "GetModel Snippet" : {
       "prefix" : "!getmodel",

@@ -17,6 +17,10 @@
         "get",
         "state-management"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kauemurakami/get_snippets_extension"
+      },
     "devDependencies": {
         "@types/change-case": "^2.3.1",
         "@types/js-yaml": "^3.12.1",
