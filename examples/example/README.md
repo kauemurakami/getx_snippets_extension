@@ -1,4 +1,4 @@
-# teste
+# example
 
 A new Flutter project.
 

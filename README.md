@@ -4,11 +4,11 @@
 Extensão feita pra você, que também utiliza essa poderosa biblioteca e não gosta de perder tempo.
 Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado, é rápido e fácil.
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
-Conheça nossas #features.
 #
 vccode link.
-
+#
 ## Features
+
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
@@ -19,6 +19,12 @@ For example if there is an image subfolder under your extension project workspac
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
+>dependencies:
+>  flutter:
+>    sdk: flutter
+>  get: ^2.12.1
+>  meta: ^1.1.8
+>  http: ^0.12.1
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
@@ -43,15 +49,8 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of get-snippets
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
 
