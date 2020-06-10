@@ -99,15 +99,15 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Release inicial de get-snippets
-snippets para:
--Geração de classe Model
--Geração de classe Repository
--Geração de classe Controller
--Geração de classe principal (**main**)
--Geração de classe Provider
--Criação de variáveis **.obs** juntamente com seus respectivos **get** e **set**
--Geração de **um** get **ou um** set 
+Release inicial de get-snippets  
+snippets para:  
+-Geração de classe Model  
+-Geração de classe Repository  
+-Geração de classe Controller  
+-Geração de classe principal (**main**)  
+-Geração de classe Provider  
+-Criação de variáveis **.obs** juntamente com seus respectivos **get** e **set**  
+-Geração de **um** get **ou um** set   
 
 
 **Aproveite!**
