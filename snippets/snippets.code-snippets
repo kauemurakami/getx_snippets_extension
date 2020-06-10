@@ -198,7 +198,7 @@
       "\trunApp(",
       "\t\tGetMaterialApp(",
       "\t\t\t\tdebugShowCheckedModeBanner: false,",
-      "\t\t\t\thome: MyHomePage(),",
+      "\t\t\t\thome: App(),",
       "\t\t)",
       "\t);",
       "}",

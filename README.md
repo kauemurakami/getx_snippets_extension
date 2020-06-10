@@ -13,10 +13,10 @@ Describe specific features of your extension including screenshots of your exten
 
 ### getmain
 Você pode usar esse snippet sempre que iniciar um projeto;  
- na sua classe main, delete todo o conteúdo e escreva **getmain**,  
+ na sua classe main, delete **todo** o conteúdo e escreva **getmain**,  
  espere pelo snippet e pronto !
 
-![](examples/giphy.gif)
+![](examples/getmain.gif)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
