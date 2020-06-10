@@ -14,17 +14,17 @@ Describe specific features of your extension including screenshots of your exten
 
 For example if there is an image subfolder under your extension project workspace:
 
-[](examples/getmain.gif)
+[](examples/giphy.gif)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
->dependencies:
->  flutter:
->    sdk: flutter
->  get: ^2.12.1
->  meta: ^1.1.8
->  http: ^0.12.1
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^2.12.1
+  meta: ^1.1.8
+  http: ^0.12.1
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
