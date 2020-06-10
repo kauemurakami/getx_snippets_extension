@@ -84,7 +84,14 @@ espere pelo snippet e pronto !
 
 
 ## Requirements
-https://gist.github.com/kauemurakami/12f848b606c1a08d0cf882ede3e83fbf
+```dependencies:
+  flutter:
+    sdk: flutter
+  get: ^2.12.1
+  meta: ^1.1.8
+  http: ^0.12.1
+```
+
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension Settings
