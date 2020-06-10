@@ -1,5 +1,7 @@
 # get-snippets
-### Extensão feita pra você, que também utiliza essa poderosa biblioteca.
+[![Star on GitHub](https://img.shields.io/github/stars/felangel/bloc.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension)
+Extensão feita pra você, que também utiliza essa poderosa biblioteca e não gosta de perder tempo.
+Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado.
 
 ## Features
 
