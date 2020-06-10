@@ -1,6 +1,5 @@
-# get-snippets README
-
-This is the README for your extension "get-snippets". After writing up a brief description, we recommend including the following sections.
+# get-snippets
+### Extensão feita pra você, que também utiliza essa poderosa biblioteca.
 
 ## Features
 
