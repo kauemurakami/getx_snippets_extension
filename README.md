@@ -12,9 +12,11 @@ Download da extensão para vccode.
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 ### getmain
-Você pode usar esse snippet sempre que iniciar um projeto;  
- na sua classe main, delete **todo** o conteúdo e escreva **getmain**,  
- espere pelo snippet e pronto !
+Reescreva de forma rápida seu arquivo **main.dart**  
+**getmain** snippet lhe trará a classe completa, sendo necessário apenas setar sua **home**  
+**uso**  
+Na sua classe main, delete **todo** o conteúdo e comece a escrever **getmain**,  
+espere pelo snippet e pronto !
 
 ![](examples/getmain.gif)
 
