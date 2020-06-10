@@ -5,14 +5,14 @@ Extensão feita pra você, que também utiliza essa poderosa biblioteca e não g
 Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado, é rápido e fácil.
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
 #
-vccode link.
+Download da extensão para vccode.
 #
 ## Features
 
-
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+###getmain
+Você pode usar esse snippet sempre que iniciar um projeto, na sua classe main, delete todo o conteúdo e user *getmain*.
 
 ![](examples/giphy.gif)
 
