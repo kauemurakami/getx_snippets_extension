@@ -84,8 +84,7 @@ espere pelo snippet e pronto !
 
 
 ## Requirements
-<script src="https://gist.github.com/kauemurakami/12f848b606c1a08d0cf882ede3e83fbf.js"></script>
-
+https://gist.github.com/kauemurakami/12f848b606c1a08d0cf882ede3e83fbf
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension Settings
