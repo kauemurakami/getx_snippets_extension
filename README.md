@@ -3,7 +3,10 @@
 #
 Extensão feita pra você, que também utiliza essa poderosa biblioteca e não gosta de perder tempo.
 Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado, é rápido e fácil desenvolver.
-
+| Package                                                                            | Pub                                                                                                    |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [get-snippets](https://github.com/kauemurakami/get_snippets_extension)                 | [![pub package]
+(https://img.shields.io/pub/v/get_snippets_extension.svg)](https://pub.dev/packages)                 |
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
