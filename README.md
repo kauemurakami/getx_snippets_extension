@@ -6,7 +6,7 @@ Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo c
 | Package                                                                            | Pub                                                                                                    |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [get-snippets](https://github.com/kauemurakami/get_snippets_extension)                 | [![pub package]
-(https://img.shields.io/pub/v/get_snippets_extension.svg)](https://pub.dev/packages)                 |
+(https://img.shields.io/pub/v/bloc.svg)](https://pub.dev/packages)                 |
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
