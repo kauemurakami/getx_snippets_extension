@@ -11,7 +11,7 @@ Download da extensão para vccode.
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-###getmain
+### getmain
 Você pode usar esse snippet sempre que iniciar um projeto, na sua classe main, delete todo o conteúdo e user *getmain*.
 
 ![](examples/giphy.gif)
