@@ -3,7 +3,7 @@ import 'package:example/src/data/model/my_model.dart';
 import 'package:http/http.dart' as http;
 import 'package:meta/meta.dart';
 
-const baseUrl = 'http://localhost/api/' ;
+const baseUrl = 'http://gerador-nomes.herokuapp.com/nomes/10';
 
 class MyApiClient {
 
@@ -19,7 +19,7 @@ getAll() async {
         List<MyModel> listMyModel = jsonResponse['data'].map<MyModel>((map) { 
           return MyModel.fromJson(map);
         }).toList();
-        return listMyModel;
+      return listMyModel;
     }else print ('erro -get');
   } catch(_){ }
 }

@@ -17,13 +17,69 @@ espere pelo snippet e pronto !
 
 ![](examples/getmain.gif)
 
-### getcontroller
+### getpage
 Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome, assim que usar o snippet.  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
 **Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
 espere pelo snippet e pronto !
 
-![](examples/getmain.gif)
+![](examples/getpage.gif)
+
+### getroutes
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getroutes.gif)
+
+### getcontroller
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getcontroller.gif)
+
+### getrepository
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getrepository.gif)
+
+### getprovider
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getprovider.gif)
+
+### getfinal
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getfinal.gif)
+
+### getset
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getset.gif)
+
+### getget
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+espere pelo snippet e pronto !
+
+![](examples/getget.gif)
 
 
 
