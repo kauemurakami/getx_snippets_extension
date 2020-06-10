@@ -12,8 +12,7 @@ Download da extensão para vccode.
 ### getmain
 Reescreva de forma rápida seu arquivo **main.dart**  
 **getmain** snippet lhe trará a classe completa, sendo necessário apenas setar sua **home**  
-### uso  
-Na sua classe main, delete **todo** o conteúdo e comece a escrever **getmain**,  
+**Uso:** Na sua classe main, delete **todo** o conteúdo e comece a escrever **getmain**,  
 espere pelo snippet e pronto !
 
 ![](examples/getmain.gif)
@@ -21,8 +20,7 @@ espere pelo snippet e pronto !
 ### getcontroller
 Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
 **getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome, assim que usar o snippet.  
-### uso  
-Na sua classe main, delete **todo** o conteúdo e comece a escrever **getmain**,  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
 espere pelo snippet e pronto !
 
 ![](examples/getmain.gif)
