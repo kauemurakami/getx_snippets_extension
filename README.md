@@ -9,8 +9,6 @@ Download da extensão para vccode.
 #
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
 ### getmain
 Reescreva de forma rápida seu arquivo **main.dart**  
 **getmain** snippet lhe trará a classe completa, sendo necessário apenas setar sua **home**  
@@ -20,7 +18,16 @@ espere pelo snippet e pronto !
 
 ![](examples/getmain.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### getcontroller
+Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome, assim que usar o snippet.  
+### uso  
+Na sua classe main, delete **todo** o conteúdo e comece a escrever **getmain**,  
+espere pelo snippet e pronto !
+
+![](examples/getmain.gif)
+
+
 
 ## Requirements
 dependencies:
