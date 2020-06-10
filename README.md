@@ -84,7 +84,8 @@ espere pelo snippet e pronto !
 
 
 ## Requirements
-```dependencies:
+```
+dependencies:
   flutter:
     sdk: flutter
   get: ^2.12.1
