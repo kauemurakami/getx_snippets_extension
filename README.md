@@ -3,6 +3,7 @@
 
 Extensão feita pra você, que também utiliza essa poderosa biblioteca e não gosta de perder tempo.  
 Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado, é rápido e fácil.  
+Viemos tornar seu desenvolvimento com [Get](https://pub.dev/packages/get) muito mais fácil !!!    
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
 > A extensão foi feita para que possamos começar um projeto completo funcional sem nenhuma alteração necessária.
 #
