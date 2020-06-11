@@ -51,7 +51,7 @@ espere pelo snippet e pronto !
 
 ### getcontroller
 Crie de forma rápida uma classe Controller com RxController do [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe Controller completa.
+**getcontroller** snippet, lhe trará uma classe Controller completa.  
 **Uso:** Ao criar um novo arquivo *my_controller.dart* vazio, comece escrevendo **getcontroller**,  
 espere pelo snippet, defina os dados e pronto !
 
