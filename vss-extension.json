@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
-    "id": "get-snippets",
-    "publisher": "Kauê Murakami",
+    "id": "KaueMurakami",
+    "publisher": "KaueMurakami",
     "version": "1.0.0",
     "name": "Get Snippets for Flutter",
     "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utiliza o package Get.",
