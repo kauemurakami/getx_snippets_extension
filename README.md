@@ -21,15 +21,16 @@ dependencies:
 **implementação**
 >Erros de importação podem aparecer até que todos os arquivos estejam criados. 
 >Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.
-#
 **estrutura proposta**  
-|-- lib  
-&nbsp;&nbsp;&nbsp;|-- src  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- controller  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- data  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- ui  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- routes  
-&nbsp;&nbsp;&nbsp;|-- main.dart  
+<pre>
+|-- lib
+  |-- src
+    |-- controller
+    |-- data
+    |-- ui
+    |-- routes
+  |-- main.dart
+</pre>
 
 
 ## Features
