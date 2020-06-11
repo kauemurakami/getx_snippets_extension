@@ -20,14 +20,14 @@ dependencies:
 ## Observações
 **implementação**
 >Erros de importação podem aparecer até que todos os arquivos estejam criados. 
->Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.  
-**estrutura proposta**
-|-- my-hub.html
-|-- node_modules
-    |-- @types
-    |-- vss-web-extension-sdk
-|-- package.json
-|-- vss-extension.json
+>Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.
+**estrutura proposta**  
+|-- my-hub.html  
+|-- node_modules  
+    |-- @types  
+    |-- vss-web-extension-sdk  
+|-- package.json  
+|-- vss-extension.json  
 
 ## Features
 
