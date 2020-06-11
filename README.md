@@ -44,7 +44,7 @@ espere pelo snippet, defina os dados necessários e pronto !
 ### getroutes
 Crie, de forma rápida, uma classe para gerenciar suas Rotas com [Get](https://pub.dev/packages/get)  
 **getroutes** snippet, lhe trará uma classe Route completa, você só precisa acrescentar mais rotas.  
-**Uso:** Ao criar um arquivo *my_routes.dart* vazio, você pode começar escrevendo **getroutes**,  
+**Uso:** Ao criar um arquivo ***my_routes.dart*** vazio, você pode começar escrevendo **getroutes**,  
 espere pelo snippet e pronto !
 
 ![](examples/getroutes.gif)
@@ -52,7 +52,7 @@ espere pelo snippet e pronto !
 ### getcontroller
 Crie, de forma rápida, classes Controller com RxController do [Get](https://pub.dev/packages/get).  
 **getcontroller** snippet, lhe trará uma classe Controller completa.  
-**Uso:** Ao criar um novo arquivo *my_controller.dart* vazio, comece escrevendo **getcontroller**,  
+**Uso:** Ao criar um novo arquivo ***my_controller.dart*** vazio, comece escrevendo **getcontroller**,  
 espere pelo snippet, defina os dados e pronto !
 
 ![](examples/getcontroller.gif)
@@ -60,7 +60,7 @@ espere pelo snippet, defina os dados e pronto !
 ### getrepository
 Crie, de forma rápida, classes Repository para suas entidades.  
 **getrepository** snippet, lhe trará uma classe Repository completa, incluindo um exemplo de um crud completo que se complementa quando você gerar o provider com *getprovider*.  
-**Uso:** Ao criar uma novo arquivo *my_repository.dart* vazio, comece escrevendo **getrepository**,  
+**Uso:** Ao criar uma novo arquivo ***my_repository.dart*** vazio, comece escrevendo **getrepository**,  
 espere pelo snippet, defina os dados e pronto !
 
 ![](examples/getrepository.gif)
@@ -68,7 +68,7 @@ espere pelo snippet, defina os dados e pronto !
 ### getprovider
 Crie de forma rápida classes Provider, para prover dados à sua aplicação, seja via API ou banco de dados local.  
 **getprovider** snippet, lhe trará uma classe Provider completa, incluindo exemplos de um crud completo que podem ser consumidos pelas função geradas no com *getrepository*.  
-**Uso:** Ao criar um novo arquivo *my_provider.dart* vazio, comece escrevendo **getprovider**,  
+**Uso:** Ao criar um novo arquivo ***my_provider.dart*** vazio, comece escrevendo **getprovider**,  
 espere pelo snippet, defina os dados e pronto !
 
 ![](examples/getprovider.gif)
