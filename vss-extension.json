@@ -6,12 +6,22 @@
     "name": "Get Snippets for Flutter",
     "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utiliza o package Get.",
     "public": true,
-    "categories": ["Azure Repos"],
+    "categories": [
+        "Azure Repos"
+    ],
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "icons": {
+        "default": "images/icon.png"
+    },
     "contributions": [
         {
             "id": "my-hub",
