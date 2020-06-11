@@ -6,7 +6,6 @@ Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo c
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
 > A extensão foi feita para que possamos começar um projeto completo funcional sem nenhuma alteração necessária.
 #
-Download da extensão para vccode.
 
 ## Requirements
 ```
