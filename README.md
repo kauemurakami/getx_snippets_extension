@@ -59,7 +59,7 @@ espere pelo snippet, defina os dados e pronto !
 
 ### getrepository
 Crie de forma rápida uma classe Repository para suas entidades,  
-**getrepository** snippet, lhe trará uma classe Repository completa, incluindo um exemplo de um crud completo que se complementa quando você gerar o provider com *getprovider*,
+**getrepository** snippet, lhe trará uma classe Repository completa, incluindo um exemplo de um crud completo que se complementa quando você gerar o provider com *getprovider*.  
 **Uso:** Ao criar uma novo arquivo *my_repository.dart* vazio, comece escrevendo **getrepository**,  
 espere pelo snippet, defina os dados e pronto !
 
