@@ -5,9 +5,9 @@
       "import 'package:get/get.dart';",
       "import 'package:meta/meta.dart';",
       "",
-      "class ${1:Name}Controller extends RxController {",
+      "class ${1:My}Controller extends RxController {",
       "",
-      "\tfinal ${2:Your}Repository repository;",
+      "\tfinal ${2:My}Repository repository;",
       "\t$1Controller({@required this.repository}) : assert(repository != null);",
       "",
       "\tfinal _${3:obj} = ''.obs;",
@@ -67,7 +67,7 @@
   "GetModel Snippet": {
     "prefix": "getmodel",
     "body": [
-      "class ${1:Model} {",
+      "class ${1:My}Model {",
       "",
       "\tint id;",
       "\tString name;",
@@ -97,7 +97,7 @@
       "",
       "const baseUrl = 'http://gerador-nomes.herokuapp.com/nomes/10';",
       "",
-      "class ${1:Your}ApiClient {",
+      "class ${1:My}ApiClient {",
       "",
       "final http.Client httpClient;",
       "$1ApiClient({@required this.httpClient});",
@@ -166,7 +166,7 @@
     "body": [
       "import 'package:meta/meta.dart';",
       "",
-      "class ${1:Your}Repository {",
+      "class ${1:My}Repository {",
       "",
       "final ${2:My}ApiClient apiClient;",
       "",

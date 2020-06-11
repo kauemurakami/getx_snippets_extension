@@ -28,7 +28,7 @@ espere pelo snippet e pronto !
 ![](examples/getmain.gif)
 
 ### getpage
-Crie de forma rápida uma classe stateless com os widgets e recursos reativos fornecidos pelo [Get](https://pub.dev/packages/get), GetX,  
+Crie de forma rápida uma classe stateless com widget e recursos reativos fornecidos pelo [Get](https://pub.dev/packages/get), GetX,  
 **getpage** snippet, lhe trará uma classe stateless completa, você só precisará indicar:  
 - O nome da sua Page;  
 - O nome do seu Repository;  
@@ -42,42 +42,42 @@ espere pelo snippet, defina os dados necessários e pronto !
 ![](examples/getpage.gif)
 
 ### getroutes
-Crie de forma rápida uma classe para gerenciar suas rotas com [Get](https://pub.dev/packages/get)  
-**getroutes** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+Crie de forma rápida uma classe para gerenciar suas Rotas com [Get](https://pub.dev/packages/get)  
+**getroutes** snippet, lhe trará uma classe Route completa, você só precisa acrescentar mais rotas.  
 **Uso:** Ao criar um arquivo *my_routes.dart* vazio, você pode começar escrevendo **getroutes**,  
 espere pelo snippet e pronto !
 
 ![](examples/getroutes.gif)
 
 ### getcontroller
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+Crie de forma rápida uma classe Controller com RxController do [Get](https://pub.dev/packages/get)  
+**getcontroller** snippet, lhe trará uma classe Controller completa.
+**Uso:** Ao criar um novo arquivo *my_controller.dart* vazio, comece escrevendo **getcontroller**,  
+espere pelo snippet, defina os dados e pronto !
 
 ![](examples/getcontroller.gif)
 
 ### getrepository
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+Crie de forma rápida uma classe Repository para suas entidades,  
+**getrepository** snippet, lhe trará uma classe Repository completa, incluindo um exemplo de um crud completo que se complementa quando você gerar o provider com *getprovider*,
+**Uso:** Ao criar uma novo arquivo *my_repository.dart* vazio, comece escrevendo **getrepository**,  
+espere pelo snippet, defina os dados e pronto !
 
 ![](examples/getrepository.gif)
 
 ### getprovider
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+Crie de forma rápida uma classe Provider, para prover dados à sua aplicação, seja via API ou banco de dados local.  
+**getprovider** snippet, lhe trará uma classe Provider completa, incluindo exemplos de um crud completo que podem ser consumidos pelas função geradas no com *getrepository*.  
+**Uso:** Ao criar um novo arquivo *my_provider.dart* vazio, comece escrevendo **getprovider**,  
+espere pelo snippet, defina os dados e pronto !
 
 ![](examples/getprovider.gif)
 
 ### getfinal
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+Crie de forma rápida uma variável **final observável** pelo [Get](https://pub.dev/packages/get)  
+**getfinal** snippet, lhe trará uma variável final observável e seus métodos **get** e **set**.  
+**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getfinal**, 
+espere pelo snippet, defina o nove da variável e pronto !
 
 ![](examples/getfinal.gif)
 
