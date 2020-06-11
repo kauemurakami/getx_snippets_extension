@@ -4,6 +4,7 @@
 Extensão feita pra você, que também utiliza essa poderosa biblioteca e não gosta de perder tempo.  
 Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado, é rápido e fácil.  
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
+> A extensão foi feita para que possamos começar um projeto completo funcional sem nenhuma alteração necessária.
 #
 Download da extensão para vccode.
 
@@ -16,6 +17,9 @@ dependencies:
   meta: ^1.1.8
   http: ^0.12.1
 ```
+##Observações
+>**Observação**: Erros de importação podem aparecer até que todos os arquivos estejam criados. 
+>Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.
 
 ## Features
 
