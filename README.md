@@ -76,7 +76,7 @@ espere pelo snippet, defina os dados e pronto !
 ### getfinal
 Crie de forma rápida variáveis **final observável** pelo [Get](https://pub.dev/packages/get).  
 **getfinal** snippet, lhe trará uma variável final observável e seus métodos **get** e **set**.  
-**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getfinal**, 
+**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getfinal**,  
 espere pelo snippet, defina o nome da variável e pronto !
 
 ![](examples/getfinal.gif)
@@ -84,7 +84,7 @@ espere pelo snippet, defina o nome da variável e pronto !
 ### getset
 Crie de forma rápida uma função **set** para um observável [Get](https://pub.dev/packages/get).  
 **getset** snippet, lhe trará uma função para atribuir um valor em seu observável.  
-**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getset**, 
+**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getset**,  
 espere pelo snippet, defina o nome da variável e pronto !
 
 ![](examples/getset.gif)
@@ -92,7 +92,7 @@ espere pelo snippet, defina o nome da variável e pronto !
 ### getget
 Crie de forma rápida uma função **get** para um observável [Get](https://pub.dev/packages/get).  
 **getget** snippet, lhe trará uma função para recuperar o valor do seu observável.  
-**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getget**, 
+**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getget**,  
 espere pelo snippet, defina o nome da variável e pronto !
 
 ![](examples/getget.gif)
