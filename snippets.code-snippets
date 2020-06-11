@@ -31,7 +31,14 @@
       "\t};",
       "}"
     ],
-    "description": "Generate GetRoutes."
+    "description": "Generate file routes."
+  },
+  "GetRoute Snippet": {
+    "prefix": "getroute",
+    "body": [
+      "\t\t'/${1:myRoute}' : GetRoute(page: ${2:My}Page()),",
+    ],
+    "description": "Generate route."
   },
   "GetPage Snippet": {
     "prefix": "getpage",

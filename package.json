@@ -3,14 +3,13 @@
   "name": "get-snippets",
   "displayName": "Get Snippets",
   "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utilizam o package Get.",
-  "version": "0.0.1",
+  "version": "0.9.1",
   "engines": {
-    "vscode": "^1.43.0"
+    "vscode": "^1.2.0"
   },
   "icon": "images/icon.png",
   "categories": [
-    "Snippets",
-    "Programming Languages"
+    "Snippets"
   ],
   "keywords": [
     "dart",
@@ -27,21 +26,17 @@
     "snippets": [
       {
         "language": "dart",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets.code-snippets"
       }
     ]
   },
   "bugs": {
     "url": "https://github.com/kauemurakami/get_snippets_extension/issues"
   },
-  "homepage": "https://github.com/kauemurakami/get_snippets_extension#readme",
-  "main": "index.js",
   "directories": {
     "example": "examples"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
   "author": "kauetmurakami",
   "license": "ISC",
   "dependencies": {
