@@ -1,11 +1,14 @@
 {
     "manifestVersion": 1,
-    "id": "GetLibrarySnippetsforFlutter",
-    "publisher": "GetLibrarySnippetsforFlutter",
+    "id": "get-snippets",
     "version": "1.0.0",
+    "publisher": "get-snippets",
     "name": "Get Library Snippets for Flutter",
     "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utilizam o package Get.",
     "public": true,
+    "icons": {
+        "default": "images/icon.png"
+    },
     "categories": [
         "Azure Repos"
     ],
@@ -14,14 +17,25 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
+    "scopes": [
+        "vso.work_write"
+    ],
+    "tags": [
+        "dart",
+        "flutter",
+        "get",
+        "getlibrary"
+    ],
     "content": {
         "details": {
             "path": "overview.md"
         }
     },
-    "icons": {
-        "default": "images/icon.png"
-    },
+    "screenshots": [
+        {
+            "path": "examples/getcontroller.gif"
+        }
+    ],
     "contributions": [
         {
             "id": "my-hub",

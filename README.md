@@ -11,6 +11,7 @@ Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo to
 
 ## Requirements
 ```
+vscode ^1.43.0
 dependencies:
   flutter:
     sdk: flutter
