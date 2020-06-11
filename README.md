@@ -20,15 +20,35 @@ dependencies:
 ## Observações
 **implementação**
 >Erros de importação podem aparecer até que todos os arquivos estejam criados. 
->Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.
+>Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.  
+
 **estrutura proposta**  
 <pre>
 |-- lib
   |-- src
     |-- controller
+      |-- mycontrollerfolder
+        |-- my_controller.dart 
     |-- data
+      |-- model
+        |-- my_model.dart
+      |-- repository
+        |-- my_repository.dart
+      |-- provider
+        |-- my_provider.dart
     |-- ui
+      |-- android
+        |-- widgets
+          |-- custom_widgets_global.dart
+        |-- mypagefolder
+          |-- widgets
+            |-- custom_widget_in_my_page.dart
+          |-- my_page.dart
+      |-- ios
+      |-- theme
+        |-- my_theme.dart
     |-- routes
+      |-- my_routes.dart
   |-- main.dart
 </pre>
 
