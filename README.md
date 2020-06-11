@@ -22,7 +22,7 @@ dependencies:
 ### getmain
 Reescreva de forma rápida seu arquivo **main.dart**  
 **getmain** snippet lhe trará a classe completa, sendo necessário apenas setar sua **home**  
-**Uso:** Na sua classe main, delete **todo** o conteúdo e comece a escrever **getmain**,  
+**Uso:** Na sua classe main, delete **todo** o conteúdo e comece escrevendo **getmain**,  
 espere pelo snippet e pronto !
 
 ![](examples/getmain.gif)
@@ -35,7 +35,7 @@ Crie de forma rápida uma classe stateless com os widgets e recursos reativos fo
 - O widget **pai** de **GetX**.
 - O nome controller,
 - o widget filho de **GetX**.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getpage**,  
+**Uso:** Ao criar um arquivo *my_page.dart* vazio, você pode começar escrevendo **getpage**,  
 espere pelo snippet, defina os dados necessários e pronto !  
 >> **DICA IMPORTANTE:** Para aproveitar totalmente o uso desse package, ao gerar classes com mais de um atributo a ser definido, você pode defini-los de forma sequêncial, a cada palavra completa pressione **TAB** para ir pro próximo atributo.
 
@@ -44,7 +44,7 @@ espere pelo snippet, defina os dados necessários e pronto !
 ### getroutes
 Crie de forma rápida uma classe para gerenciar suas rotas com [Get](https://pub.dev/packages/get)  
 **getroutes** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+**Uso:** Ao criar um arquivo *my_routes.dart* vazio, você pode começar escrevendo **getroutes**,  
 espere pelo snippet e pronto !
 
 ![](examples/getroutes.gif)
