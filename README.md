@@ -7,6 +7,8 @@ Viemos tornar seu desenvolvimento com [Get](https://pub.dev/packages/get) muito 
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
 > A extensão foi feita para que possamos começar um projeto completo funcional sem nenhuma alteração necessária.
 
+#### download da extensão no [MarketPlace](https://marketplace.visualstudio.com/items?itemName=KaueMurakami.KaueMurakami)
+
 ## Requirements
 ```
 dependencies:

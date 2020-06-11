@@ -7,6 +7,12 @@
     "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utiliza o package Get.",
     "public": true,
     "categories": [
+        "flutter",
+        "snippets",
+        "get-library",
+        "get",
+        "dar",
+        "flutter pattern",
         "Azure Repos"
     ],
     "targets": [
