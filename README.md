@@ -53,7 +53,7 @@ dependencies:
 </pre>
 
 ## Example
-]Veja aqui um exemplo completo](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)
+[Veja aqui um exemplo completo](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)
 ## Features
 
 ### getmain
