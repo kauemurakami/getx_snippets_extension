@@ -6,7 +6,17 @@ Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo c
 Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
 #
 Download da extensão para vccode.
-#
+
+## Requirements
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^2.12.1
+  meta: ^1.1.8
+  http: ^0.12.1
+```
+
 ## Features
 
 ### getmain
@@ -18,10 +28,16 @@ espere pelo snippet e pronto !
 ![](examples/getmain.gif)
 
 ### getpage
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+Crie de forma rápida uma classe stateless com os widgets e recursos reativos fornecidos pelo [Get](https://pub.dev/packages/get), GetX,  
+**getpage** snippet, lhe trará uma classe stateless completa, você só precisará indicar:  
+- O nome da sua Page;  
+- O nome do seu Repository;  
+- O widget **pai** de **GetX**.
+- O nome controller,
+- o widget filho.
 **Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+espere pelo snippet, defina os dados necessários e pronto !  
+>> **obs:** Para aproveitar totalmente o uso desse package, ao gerar classes com mais de um atributo a ser definido, você pode defini-los de forma sequêncial, a cada palavra completa pressiona **TAB** para ir pro próximo atributo
 
 ![](examples/getpage.gif)
 
@@ -80,18 +96,6 @@ Crie de forma rápida uma classe com RxController, disponível no package [Get](
 espere pelo snippet e pronto !
 
 ![](examples/getget.gif)
-
-
-
-## Requirements
-```
-dependencies:
-  flutter:
-    sdk: flutter
-  get: ^2.12.1
-  meta: ^1.1.8
-  http: ^0.12.1
-```
 
 ## Release Notes
 

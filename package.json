@@ -1,7 +1,7 @@
 {
     "name": "get-snippets",
-    "displayName": "get_snippets",
-    "description": "Extensão para auxiliar/acelerar o processo de desenvolvimento com a biblioteca get",
+    "displayName": "Get Snippets",
+    "description": "Extensão para auxiliar/acelerar o processo de desenvolvimento de quem trabalha com o package Get.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.45.0"
@@ -21,29 +21,6 @@
         "type": "git",
         "url": "https://github.com/kauemurakami/get_snippets_extension"
       },
-    "devDependencies": {
-        "@types/change-case": "^2.3.1",
-        "@types/js-yaml": "^3.12.1",
-        "@types/lodash": "^4.14.121",
-        "@types/mkdirp": "^0.5.2",
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^12.7.8",
-        "@types/rimraf": "^2.0.2",
-        "@types/semver": "^6.0.2",
-        "ts-loader": "^6.2.1",
-        "tslint": "^5.12.1",
-        "typescript": "^3.5.1",
-        "vscode": "^1.1.33",
-        "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.10"
-    },
-    "dependencies": {
-        "change-case": "^3.1.0",
-        "js-yaml": "^3.13.1",
-        "lodash": "^4.17.15",
-        "mkdirp": "^0.5.1",
-        "semver": "^6.3.0"
-    },
     "contributes": {
         "snippets": [
             {
