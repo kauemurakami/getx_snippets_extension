@@ -82,18 +82,18 @@ espere pelo snippet, defina o nome da variável e pronto !
 ![](examples/getfinal.gif)
 
 ### getset
-Crie de forma rápida uma função set para um observável [Get](https://pub.dev/packages/get).  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+Crie de forma rápida uma função **set** para um observável [Get](https://pub.dev/packages/get).  
+**getset** snippet, lhe trará uma função para atribuir um valor em seu observável.  
+**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getset**, 
+espere pelo snippet, defina o nome da variável e pronto !
 
 ![](examples/getset.gif)
 
 ### getget
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
-espere pelo snippet e pronto !
+Crie de forma rápida uma função **get** para um observável [Get](https://pub.dev/packages/get).  
+**getget** snippet, lhe trará uma função para recuperar o valor do seu observável.  
+**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getget**, 
+espere pelo snippet, defina o nome da variável e pronto !
 
 ![](examples/getget.gif)
 
