@@ -1,0 +1,39 @@
+{
+    "manifestVersion": 1,
+    "id": "get-snippets",
+    "publisher": "Kauê Murakami",
+    "version": "1.0.0",
+    "name": "Get Snippets for Flutter",
+    "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utiliza o package Get.",
+    "public": true,
+    "categories": ["Azure Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "my-hub",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "name": "My Hub",
+                "uri": "my-hub.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "my-hub.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}

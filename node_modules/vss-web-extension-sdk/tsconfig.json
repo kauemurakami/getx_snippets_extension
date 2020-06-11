@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
+        "skipLibCheck": true,
+        "types": []
+    },
+    "include": [
+        "typings/**/*.ts"
+    ]
+}
