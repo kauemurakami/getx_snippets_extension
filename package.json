@@ -3,7 +3,7 @@
   "name": "get-snippets",
   "displayName": "Get Snippets",
   "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utilizam o package Get.",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.2.0"
   },

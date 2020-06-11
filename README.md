@@ -89,6 +89,14 @@ espere pelo snippet e pronto !
 
 ![](examples/getroutes.gif)
 
+### getroute
+Agora que você já possui a classe rotas, adicione facilmente outra rota com a navegação do [Get](https://pub.dev/packages/get)  
+**getroute** snippet, lhe trará rota completa, você só irá definir a url e sua page de forma fácil.  
+**Uso:** Dentro do arquivo ***my_routes.dart***, em nossa classe criada com *getroutes*, você pode começar escrevendo **getroute**,  
+espere pelo snippet e pronto !
+
+![](examples/getroute.gif)
+
 ### getcontroller
 Crie, de forma rápida, classes Controller com RxController do [Get](https://pub.dev/packages/get).  
 **getcontroller** snippet, lhe trará uma classe Controller completa.  
