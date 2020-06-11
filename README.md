@@ -24,7 +24,7 @@ dependencies:
 **estrutura proposta**  
 |-- my-hub.html  
 |-- node_modules  
-    |-- @types  
+   &nbsp;&nbsp; |-- @types  
     |-- vss-web-extension-sdk  
 |-- package.json  
 |-- vss-extension.json  
