@@ -35,15 +35,15 @@ Crie de forma rápida uma classe stateless com os widgets e recursos reativos fo
 - O widget **pai** de **GetX**.
 - O nome controller,
 - o widget filho.
-**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
+**Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getpage**,  
 espere pelo snippet, defina os dados necessários e pronto !  
->> **obs:** Para aproveitar totalmente o uso desse package, ao gerar classes com mais de um atributo a ser definido, você pode defini-los de forma sequêncial, a cada palavra completa pressiona **TAB** para ir pro próximo atributo
+>> **DICA IMPORTANTE:** Para aproveitar totalmente o uso desse package, ao gerar classes com mais de um atributo a ser definido, você pode defini-los de forma sequêncial, a cada palavra completa pressione **TAB** para ir pro próximo atributo.
 
 ![](examples/getpage.gif)
 
 ### getroutes
-Crie de forma rápida uma classe com RxController, disponível no package [Get](https://pub.dev/packages/get)  
-**getcontroller** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
+Crie de forma rápida uma classe para gerenciar suas rotas com [Get](https://pub.dev/packages/get)  
+**getroutes** snippet, lhe trará uma classe controller completa, você só precisará indicar o nome assim que usar o snippet.  
 **Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getcontroller**,  
 espere pelo snippet e pronto !
 
