@@ -160,6 +160,7 @@ snippets para:
 - Geração de classe Provider  
 - Criação de variáveis **.obs** juntamente com seus respectivos **get** e **set**  
 - Geração de **um** get **ou um** set  
+- Geração de classe Rotas e rotas individuais 
 
 
 **Aproveite!**
