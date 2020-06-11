@@ -22,12 +22,14 @@ dependencies:
 >Erros de importação podem aparecer até que todos os arquivos estejam criados. 
 >Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.
 **estrutura proposta**  
-|-- my-hub.html  
-|-- node_modules  
-   &nbsp;&nbsp; |-- @types  
-    |-- vss-web-extension-sdk  
-|-- package.json  
-|-- vss-extension.json  
+|-- lib
+&nbsp;&nbsp;|-- src
+&nbsp;&nbsp;&nbsp;&nbsp;|-- controller
+&nbsp;&nbsp;&nbsp;&nbsp;|-- data
+&nbsp;&nbsp;&nbsp;&nbsp;|-- ui
+&nbsp;&nbsp;&nbsp;&nbsp;|-- routes
+&nbsp;&nbsp;|-- main.dart
+&nbsp;&nbsp;
 
 ## Features
 
