@@ -1,18 +1,12 @@
 {
     "manifestVersion": 1,
-    "id": "KaueMurakami",
-    "publisher": "KaueMurakami",
+    "id": "GetLibrarySnippetsforFlutter",
+    "publisher": "GetLibrarySnippetsforFlutter",
     "version": "1.0.0",
-    "name": "Get Snippets for Flutter",
-    "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utiliza o package Get.",
+    "name": "Get Library Snippets for Flutter",
+    "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utilizam o package Get.",
     "public": true,
     "categories": [
-        "flutter",
-        "snippets",
-        "get-library",
-        "get",
-        "dar",
-        "flutter pattern",
         "Azure Repos"
     ],
     "targets": [
