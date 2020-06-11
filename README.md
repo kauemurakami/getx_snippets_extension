@@ -24,12 +24,12 @@ dependencies:
 #
 **estrutura proposta**  
 |-- lib  
-&nbsp;&nbsp;|-- src  
-&nbsp;&nbsp;&nbsp;&nbsp;|-- controller  
-&nbsp;&nbsp;&nbsp;&nbsp;|-- data  
-&nbsp;&nbsp;&nbsp;&nbsp;|-- ui  
-&nbsp;&nbsp;&nbsp;&nbsp;|-- routes  
-&nbsp;&nbsp;|-- main.dart  
+&nbsp;&nbsp;&nbsp;|-- src  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- controller  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- data  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- ui  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- routes  
+&nbsp;&nbsp;&nbsp;|-- main.dart  
 
 
 ## Features
