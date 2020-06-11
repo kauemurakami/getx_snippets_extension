@@ -34,7 +34,7 @@ Crie de forma rápida uma classe stateless com os widgets e recursos reativos fo
 - O nome do seu Repository;  
 - O widget **pai** de **GetX**.
 - O nome controller,
-- o widget filho.
+- o widget filho de **GetX**.  
 **Uso:** Ao criar uma novo arquivo *controller.dart* vazio, comece a escrever **getpage**,  
 espere pelo snippet, defina os dados necessários e pronto !  
 >> **DICA IMPORTANTE:** Para aproveitar totalmente o uso desse package, ao gerar classes com mais de um atributo a ser definido, você pode defini-los de forma sequêncial, a cada palavra completa pressione **TAB** para ir pro próximo atributo.
