@@ -22,7 +22,7 @@ dependencies:
 >Erros de importação podem aparecer até que todos os arquivos estejam criados. 
 >Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.  
 
-**estrutura proposta**  
+**estrutura proposta**
 <pre>
 |-- lib
   |-- src
