@@ -147,6 +147,17 @@ wait for the snippet, set the variable name and you're done !
 
 ![](examples/getget.gif)
 
+### getxlist
+Quickly create a widget **GetX** from [Get](https://pub.dev/packages/get) containing a functional dynamic list, consuming your controller .  
+**getxlist** this snippet will bring you the [Get](https://pub.dev/packages/get) widget, GetX, along with
+some optional attributes and its builder function, which in turn contains a listview.separated with a child listtile to display values.  
+**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getxlist**,  
+wait for the snippet, set the variable name and you're done !
+
+![](examples/getxlist.gif)
+![](examples/getxlist.jpeg)
+
+
 ## Releases Notes
 
 ### 2.0.0 - current
