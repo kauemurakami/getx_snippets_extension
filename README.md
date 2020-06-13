@@ -152,7 +152,9 @@ Quickly create a widget **GetX** from [Get](https://pub.dev/packages/get) contai
 **getxlist** this snippet will bring you the [Get](https://pub.dev/packages/get) widget, GetX, along with
 some optional attributes and its builder function, which in turn contains a listview.separated with a child listtile to display values.  
 **Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getxlist**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, set the variable name and you're done !  
+> Notice that in the example we are using initState to enter a value for our variable.
+>We did this so that you can see that a statefull widget is not necessary when using Get, you could start your page by calling a >controller function that retrieves all your users and inserting them into a variable in your controller, for example, then just use >the same controller your controller inside the GetX widget
 
 ![](examples/getxlist.gif)
 ![](examples/getxlist.jpeg)
