@@ -191,6 +191,7 @@ You can now create dynamic lists with dismissibles already configured for you. A
 - A Dismissible Widget that allows you to perform actions by dragging items from the list TO BOTH SIDES, fully configured, just choose what to do with it !!!  
 - A ListTile to simulate your list  
 
+- Generation of Provider class Dio and http   
 Start using and enjoy !!!
 
 ### 1.0.0
