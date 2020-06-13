@@ -2,7 +2,7 @@
   "publisher": "get-snippets",
   "name": "get-snippets",
   "displayName": "Get Snippets",
-  "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utilizam o package Get.",
+  "description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.2.0"

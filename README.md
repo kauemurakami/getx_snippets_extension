@@ -1,14 +1,15 @@
 # get-snippets
-[![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension)
+[![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension)  
 ![](images/icon_readme.png)
 
-Extensão feita pra você, que também utiliza essa poderosa biblioteca e não gosta de perder tempo.  
-Nessa extensão, você encontra snippets de trechos de códigos, ou até mesmo classes inteiras, geradas apenas com alguns toques no teclado, é rápido e fácil.  
-Viemos tornar seu desenvolvimento com [Get](https://pub.dev/packages/get) muito mais fácil !!!    
-Então saia na frente e comece a usar, são apenas 10 snippets, com o prefixo totalmente intuitivo, pra você não se esquecer :D
-> A extensão foi feita para que possamos começar um projeto completo funcional sem nenhuma alteração necessária.
+Extension made for you, who also uses this powerful library and doesn't like to waste time.  
+To that extent, you find snippets of snippets of code, or even entire classes, generated with just a few keystrokes, 
+it's quick and easy.  
+We came to make your development with [Get](https://pub.dev/packages/get) easy !!!    
+So get out front and start using, it's just 11 snippets, with fully intuitive prefixes, so you don't forget :D  
+> The extension was made so that we can start a complete functional project without any necessary changes.
 
-#### download da extensão no [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
+#### download extension on [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
 
 ## Requirements
 ```
@@ -18,14 +19,14 @@ dependencies:
     sdk: flutter
   get: ^2.12.1
   meta: ^1.1.8
-  http: ^0.12.1
+  http: ^0.12.1 or dio: 3.x
 ```
-## Observações
-**implementação**
->Erros de importação podem aparecer até que todos os arquivos estejam criados. 
->Quando todos os arquivos estiverem criados, basta importar todas as dependências para resolver todos os erros.  
+## Comments
+**implementation**
+>Import errors can appear until all files are created. 
+>When all files are created, just import all dependencies to resolve all errors.  
 
-**estrutura proposta**
+**Proposed structure -> subsequent changes will not change the current structure**
 <pre>
 |-- lib
   |-- src
@@ -56,111 +57,116 @@ dependencies:
 </pre>
 
 ## Example
-[Veja aqui um exemplo completo](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)
+[See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
+not yet available
 ## Features
 
 ### getmain
-Reescreva de forma rápida seu arquivo **main.dart**  
-**getmain** snippet lhe trará a classe completa, sendo necessário apenas setar sua **home**  
-**Uso:** Na sua classe main, delete **todo** o conteúdo e comece escrevendo **getmain**,  
-espere pelo snippet e pronto !
+Quickly rewrite your file **main.dart**  
+**getmain** snippet will bring you the complete class, you just need to set your **home**  
+**Uso:** In your main class, delete **all** the content and start writing **getmain**,  
+wait for the snippet and that's it !
 
 ![](examples/getmain.gif)
 
 ### getpage
-Crie, de forma rápida, classes Stateless com widget e recursos reativos fornecidos pelo [Get](https://pub.dev/packages/get), GetX,  
-**getpage** snippet, lhe trará uma classe stateless completa, você só precisará indicar:  
-- O nome da sua Page;  
-- O nome do seu Repository;  
-- O widget **pai** de **GetX**.
-- O nome controller,
-- o widget filho de **GetX**.  
-**Uso:** Ao criar um arquivo ***my_page.dart*** vazio, você pode começar escrevendo **getpage**,  
-espere pelo snippet, defina os dados necessários e pronto !  
->> **DICA IMPORTANTE:** Para aproveitar totalmente o uso desse package, ao gerar classes com mais de um atributo a ser definido, você pode defini-los de forma sequêncial, a cada palavra completa pressione **TAB** para ir pro próximo atributo.
+Quickly create, Stateless classes with widget and reactive features provided by [Get](https://pub.dev/packages/get), GetX,  
+**getpage** snippet, will bring you a complete stateless class, you only need to indicate:  
+- The name of your Page;  
+- The name of your Repository;  
+- The widget **parent** of **GetX**.
+- The name of your Controller,
+- The widget child of **GetX**.  
+**Use:** When creating a file ***my_page.dart*** empty, you can start by writing **getpage**,  
+wait for the snippet, define the necessary data and ready!!  
+>> **IMPORTANT TIP:** To take full advantage of using this extension, when generating classes with more than one attribute to be defined, you can define them sequentially, every full word press **TAB** to go to the next expected attribute, many snippets do that.
 
 ![](examples/getpage.gif)
 
 ### getroutes
-Crie, de forma rápida, uma classe para gerenciar suas Rotas com [Get](https://pub.dev/packages/get)  
-**getroutes** snippet, lhe trará uma classe Route completa, você só precisa acrescentar mais rotas.  
-**Uso:** Ao criar um arquivo ***my_routes.dart*** vazio, você pode começar escrevendo **getroutes**,  
-espere pelo snippet e pronto !
+Quickly create, a class to manage your Routes with [Get](https://pub.dev/packages/get)  
+**getroutes** snippet, will bring you a complete Route class, you just need to add more routes.  
+**Uso:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutes**,  
+wait for the snippet and that's it !
 
 ![](examples/getroutes.gif)
 
 ### getroute
-Agora que você já possui a classe rotas, adicione facilmente outra rota com a navegação do [Get](https://pub.dev/packages/get)  
-**getroute** snippet, lhe trará rota completa, você só irá definir a url e sua page de forma fácil.  
-**Uso:** Dentro do arquivo ***my_routes.dart***, em nossa classe criada com *getroutes*, você pode começar escrevendo **getroute**,  
-espere pelo snippet e pronto !
+Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
+**getroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
+**Uso:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroute**,  
+wait for the snippet and that's it !
 
 ![](examples/getroute.gif)
 
 ### getcontroller
-Crie, de forma rápida, classes Controller com RxController do [Get](https://pub.dev/packages/get).  
-**getcontroller** snippet, lhe trará uma classe Controller completa.  
-**Uso:** Ao criar um novo arquivo ***my_controller.dart*** vazio, comece escrevendo **getcontroller**,  
-espere pelo snippet, defina os dados e pronto !
+Quickly create Controller classes with RxController from [Get](https://pub.dev/packages/get).  
+**getcontroller** snippet, will bring you a complete Controller class.  
+**Uso:** When creating a new file ***my_controller.dart*** empty, start writing **getcontroller**,  
+wait for the snippet, set the data and you're done!
 
 ![](examples/getcontroller.gif)
 
 ### getrepository
-Crie, de forma rápida, classes Repository para suas entidades.  
-**getrepository** snippet, lhe trará uma classe Repository completa, incluindo um exemplo de um crud completo que se complementa quando você gerar o provider com *getprovider*.  
-**Uso:** Ao criar uma novo arquivo ***my_repository.dart*** vazio, comece escrevendo **getrepository**,  
-espere pelo snippet, defina os dados e pronto !
+Quickly create Repository classes for your entities.  
+**getrepository** snippet, will bring you a complete Repository class, including an example of a complete crud that complements itself when you generate the provider with *getprovider*.  
+**Uso:** When creating a new file ***my_repository.dart*** empty, start writing **getrepository**,  
+wait for the snippet, set the data and you're done !
 
 ![](examples/getrepository.gif)
 
 ### getprovider
-Crie de forma rápida classes Provider, para prover dados à sua aplicação, seja via API ou banco de dados local.  
-**getprovider** snippet, lhe trará uma classe Provider completa, incluindo exemplos de um crud completo que podem ser consumidos pelas função geradas no com *getrepository*.  
-**Uso:** Ao criar um novo arquivo ***my_provider.dart*** vazio, comece escrevendo **getprovider**,  
-espere pelo snippet, defina os dados e pronto !
+Quickly create Provider classes, to provide data to your application, either via API or local database.  
+**getprovider** snippet, will bring you a Provider class, including examples of a complete crud that can be consumed by the functions generated in the com *getrepository*.  
+**Uso:** When creating a new file ***my_provider.dart*** empty, start writing **getprovider**,  
+wait for the snippet, set the data and you're done !
 
 ![](examples/getprovider.gif)
 
 ### getfinal
-Crie de forma rápida variáveis **final observável** pelo [Get](https://pub.dev/packages/get).  
-**getfinal** snippet, lhe trará uma variável final observável e seus métodos **get** e **set**.  
-**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getfinal**,  
-espere pelo snippet, defina o nome da variável e pronto !
+Quickly create variables **final observável** for [Get](https://pub.dev/packages/get).  
+**getfinal** snippet, will bring you an observable final variable and its methods **get** and **set**.  
+**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getfinal**,  
+wait for the snippet, set the variable name and you're done !
 
 ![](examples/getfinal.gif)
 
 ### getset
-Crie de forma rápida uma função **set** para um observável [Get](https://pub.dev/packages/get).  
-**getset** snippet, lhe trará uma função para atribuir um valor em seu observável.  
-**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getset**,  
-espere pelo snippet, defina o nome da variável e pronto !
+Quickly create a function **set** for an observable [Get](https://pub.dev/packages/get).  
+**getset** snippet, will bring you a function to assign a value in your observable.  
+**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getset**,  
+wait for the snippet, set the variable name and you're done !
 
 ![](examples/getset.gif)
 
 ### getget
-Crie de forma rápida uma função **get** para um observável [Get](https://pub.dev/packages/get).  
-**getget** snippet, lhe trará uma função para recuperar o valor do seu observável.  
-**Uso:** Em qualquer arquivo que possuir o package [Get](https://pub.dev/packages/get), basta começar escrevendo **getget**,  
-espere pelo snippet, defina o nome da variável e pronto !
+Quickly create a function **get** para um observável [Get](https://pub.dev/packages/get).  
+**getget** snippet, will bring you a function to recover the value of your observable.  
+**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getget**,  
+wait for the snippet, set the variable name and you're done !
 
 ![](examples/getget.gif)
 
-## Release Notes
+## Releases Notes
 
-Users appreciate release notes as you update your extension.
+### 2.0.0 - current
+get-snippets release 2.  
+:octopus: New Features :octopus:  
+
+
+
 
 ### 1.0.0
-
-Release inicial de get-snippets  
+get-snippets initial release.
 snippets para:  
-- Geração de classe Model  
-- Geração de classe Repository  
-- Geração de classe Controller  
-- Geração de classe principal (**main**)  
-- Geração de classe Provider  
-- Criação de variáveis **.obs** juntamente com seus respectivos **get** e **set**  
-- Geração de **um** get **ou um** set  
-- Geração de classe Rotas e rotas individuais 
+- Generetion of Model class 
+- Generation of Repository class  
+- Generation of Controller class  
+- Generation of Main class (**main**)  
+- Generation of Provider class  
+- Creating variables **.obs** together with their respective **get** e **set**  
+- Generation of **um** get **ou um** set  
+- Generation of class Routes and individual routes
 
 
 **Aproveite!**
