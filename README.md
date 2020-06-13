@@ -64,7 +64,7 @@ not yet available
 ### getmain
 Quickly rewrite your file **main.dart**  
 **getmain** snippet will bring you the complete class, you just need to set your **home**  
-**Uso:** In your main class, delete **all** the content and start writing **getmain**,  
+**Using:** In your main class, delete **all** the content and start writing **getmain**,  
 wait for the snippet and that's it !
 
 ![](examples/getmain.gif)
@@ -77,7 +77,7 @@ Quickly create, Stateless classes with widget and reactive features provided by 
 - The widget **parent** of **GetX**.
 - The name of your Controller,
 - The widget child of **GetX**.  
-**Use:** When creating a file ***my_page.dart*** empty, you can start by writing **getpage**,  
+**Using:** When creating a file ***my_page.dart*** empty, you can start by writing **getpage**,  
 wait for the snippet, define the necessary data and ready!!  
 >> **IMPORTANT TIP:** To take full advantage of using this extension, when generating classes with more than one attribute to be defined, you can define them sequentially, every full word press **TAB** to go to the next expected attribute, many snippets do that.
 
@@ -86,7 +86,7 @@ wait for the snippet, define the necessary data and ready!!
 ### getroutes
 Quickly create, a class to manage your Routes with [Get](https://pub.dev/packages/get)  
 **getroutes** snippet, will bring you a complete Route class, you just need to add more routes.  
-**Uso:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutes**,  
+**Using:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutes**,  
 wait for the snippet and that's it !
 
 ![](examples/getroutes.gif)
@@ -94,7 +94,7 @@ wait for the snippet and that's it !
 ### getroute
 Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
 **getroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
-**Uso:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroute**,  
+**Using:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroute**,  
 wait for the snippet and that's it !
 
 ![](examples/getroute.gif)
@@ -102,7 +102,7 @@ wait for the snippet and that's it !
 ### getcontroller
 Quickly create Controller classes with RxController from [Get](https://pub.dev/packages/get).  
 **getcontroller** snippet, will bring you a complete Controller class.  
-**Uso:** When creating a new file ***my_controller.dart*** empty, start writing **getcontroller**,  
+**Using:** When creating a new file ***my_controller.dart*** empty, start writing **getcontroller**,  
 wait for the snippet, set the data and you're done!
 
 ![](examples/getcontroller.gif)
@@ -110,7 +110,7 @@ wait for the snippet, set the data and you're done!
 ### getrepository
 Quickly create Repository classes for your entities.  
 **getrepository** snippet, will bring you a complete Repository class, including an example of a complete crud that complements itself when you generate the provider with *getprovider*.  
-**Uso:** When creating a new file ***my_repository.dart*** empty, start writing **getrepository**,  
+**Using:** When creating a new file ***my_repository.dart*** empty, start writing **getrepository**,  
 wait for the snippet, set the data and you're done !
 
 ![](examples/getrepository.gif)
@@ -118,7 +118,7 @@ wait for the snippet, set the data and you're done !
 ### getprovider
 Quickly create Provider classes, to provide data to your application, either via API or local database.  
 **getprovider** snippet, will bring you a Provider class, including examples of a complete crud that can be consumed by the functions generated in the com *getrepository*.  
-**Uso:** When creating a new file ***my_provider.dart*** empty, start writing **getprovider**,  
+**Using:** When creating a new file ***my_provider.dart*** empty, start writing **getprovider**,  
 wait for the snippet, set the data and you're done !
 
 ![](examples/getprovider.gif)
@@ -126,7 +126,7 @@ wait for the snippet, set the data and you're done !
 ### getfinal
 Quickly create variables **final observável** for [Get](https://pub.dev/packages/get).  
 **getfinal** snippet, will bring you an observable final variable and its methods **get** and **set**.  
-**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getfinal**,  
+**Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getfinal**,  
 wait for the snippet, set the variable name and you're done !
 
 ![](examples/getfinal.gif)
@@ -134,7 +134,7 @@ wait for the snippet, set the variable name and you're done !
 ### getset
 Quickly create a function **set** for an observable [Get](https://pub.dev/packages/get).  
 **getset** snippet, will bring you a function to assign a value in your observable.  
-**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getset**,  
+**Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getset**,  
 wait for the snippet, set the variable name and you're done !
 
 ![](examples/getset.gif)
@@ -142,7 +142,7 @@ wait for the snippet, set the variable name and you're done !
 ### getget
 Quickly create a function **get** para um observável [Get](https://pub.dev/packages/get).  
 **getget** snippet, will bring you a function to recover the value of your observable.  
-**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getget**,  
+**Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getget**,  
 wait for the snippet, set the variable name and you're done !
 
 ![](examples/getget.gif)
@@ -151,7 +151,7 @@ wait for the snippet, set the variable name and you're done !
 Quickly create a widget **GetX** from [Get](https://pub.dev/packages/get) containing a functional dynamic list, consuming your controller .  
 **getxlist** this snippet will bring you the [Get](https://pub.dev/packages/get) widget, GetX, along with
 some optional attributes and its builder function, which in turn contains a listview.separated with a child listtile to display values.  
-**Uso:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getxlist**,  
+**Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getxlist**,  
 wait for the snippet, set the variable name and you're done !  
 > Notice that in the example we are using ***initState*** to enter a value for our variable. 
 >We did this so that you can see that a statefull widget is not necessary when using ***Get***, you could start your page by calling >a ***controller function*** that retrieves all your users and inserting them into a ***variable in your controller***, for example, then just use >the same controller your controller inside the GetX widget.
@@ -160,6 +160,15 @@ wait for the snippet, set the variable name and you're done !
 ### result
 ![](examples/getxlist.jpeg)
 
+### getxlistdismissible
+Quickly create a GetX widget from [Get](https://pub.dev/packages/get) containing a fully configured listview and dismissible widgets.  
+**getxlistdismissible** it will bring you, a GetX Widget, a ListView containing a Dismissible ready to use, you can drag from beginning to end to edit or from end to beginning to delete, just create your functions in the controller.  
+**Using:** In any widget that has the Get package, start writing **getxlistdismissible**,  
+wait for the snippet, set the variable and function name and you're done !  
+
+![](examples/getxlistdismissible.gif)
+### result
+![](examples/getxlistdismissibleresult.gif)
 
 
 ## Releases Notes
