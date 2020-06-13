@@ -123,6 +123,11 @@ wait for the snippet, set the data and you're done !
 
 ![](examples/getprovider.gif)
 
+### getproviderdio
+Has the same purpose as getprovider, but for people who use Dio instead of http.
+
+![](examples/getproviderdio.gif)
+
 ### getfinal
 Quickly create variables **final observável** for [Get](https://pub.dev/packages/get).  
 **getfinal** snippet, will bring you an observable final variable and its methods **get** and **set**.  
