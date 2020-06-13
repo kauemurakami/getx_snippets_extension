@@ -169,7 +169,7 @@ snippets para:
 - Generation of class Routes and individual routes
 
 
-**Aproveite!**
+**Enjoy!**
 
 -----------------------------------------------------------------------------------------------------------
 

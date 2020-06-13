@@ -11,7 +11,6 @@
       "\t$1Controller({@required this.repository}) : assert(repository != null);",
       "",
       "\tfinal _${3:obj} = ''.obs;",
-      "",
       "\tset $3(value) => this._$3.value = value;",
       "\tget $3 => this._$3.value;",
       "}"
@@ -242,6 +241,34 @@
       "",
       "set $1(value) => this._$1.value = value;",
       "",
+    ],
+    "description": "Generate final, get and setter. "
+  },
+  "GetXList Snippet": {
+    "prefix": "getxlist",
+    "body": [
+      "",
+      "GetX<${1:My}Controller>(",
+      "",
+      "\t//autoRemove: false,",
+      "\t//assignId: false,",
+      "\tinit: $1Controller(repository : repository),",
+      "\tinitState: (state){ Get.find<$1Controller>().obj = 'fast code get snittpets' ;},",
+      "\tbuilder: (_) {",
+      "\t\treturn _.obj.isNotEmpty ?",
+      "\t\tListView.separated(",
+      "\t\tseparatorBuilder: (context, index) => Divider(height: 1,),",
+      "\t\titemCount: 5,",
+      "\t\titemBuilder: (context, index){",
+      "\t\t\treturn ListTile(",
+      "\t\t\t\ttitle: Text(_.obj),",
+      "\t\t\t\tsubtitle: Text(index.toString()),",
+      "\t\t\t);",
+      "\t\t})",
+      "\t\t:",
+      "\t\t\t Center(child: CircularProgressIndicator());",
+      "\t}",
+      ")"
     ],
     "description": "Generate final, get and setter. "
   },
