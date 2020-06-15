@@ -1,9 +1,9 @@
 {
   "publisher": "get-snippets",
   "name": "get-snippets",
-  "displayName": "Get Snippets",
+  "displayName": "GetX Snippets",
   "description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.2.0"
   },

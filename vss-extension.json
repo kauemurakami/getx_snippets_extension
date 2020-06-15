@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
     "id": "get-snippets",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "publisher": "get-snippets",
     "name": "Get Library Snippets for Flutter",
-    "description": "Uma extensão para acelerar o processo de desenvolvimento de aplicações com flutter, destinado a todos que utilizam o package Get.",
+    "description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
     "public": true,
     "icons": {
         "default": "images/icon.png"
