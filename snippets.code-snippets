@@ -304,7 +304,7 @@
       "\t}",
       ")"
     ],
-    "description": "Generate final, get and setter. "
+    "description": "Generates a ListView with GetX widget, fully functional. "
   },
   "GetXListDismissible Snippet": {
     "prefix": "getxlistdismissible",
@@ -352,32 +352,71 @@
       "\t}",
       ")"
     ],
-    "description": "Generate final, get and setter. "
+    "description": "Generates a ListView with GetX and Dismissible widget, fully functional."
+  },
+  "GetMyWidget Snippet": {
+    "prefix": "getmywidget",
+    "body": [
+      "${1:MyCustomWidget}($2),",
+    ],
+    "description": "Instance of your custom component. "
   },
   "GetButton Snippet": {
     "prefix": "getbutton",
     "body": [
       "",
-      "final _${1:value} = .obs;",
-      "",
-      "get $1 => this._$1.value;",
-      "",
-      "set $1(value) => this._$1.value = value;",
-      "",
+      "RaisedButton(",
+      "\tcolor: ${1:Colors.blue},",
+      "\tonPressed: ()=> _.${2:function},",
+      "\tsplashColor: ${3:Colors.blueGrey},",
+      "\tchild: Text('${4:OK}',",
+      "\t\tstyle: TextStyle(",
+      "\t\t\tcolor: ${5:Colors.white},",
+      "\t\t\tfontSize: ${6:16},",
+      "\t\t),",
+      "\t),",
+      "),",
     ],
-    "description": "Generate final, get and setter. "
+    "description": "Generates a Standard RaisedButtom with its attributes. "
   },
   "GetButtonWidget Snippet": {
     "prefix": "getbuttonwidget",
     "body": [
+      "import 'package:flutter/material.dart';",
+      "class CustomButton extends StatelessWidget {",
+      "\tfinal Function function;",
+      "\tfinal String text;",
+      "\tfinal Color color;",
+      "\tfinal Color textColor;",
+      "\tfinal Color splashColor;",
+      "\tfinal double fontSize;",
       "",
-      "final _${1:value} = .obs;",
+      "\tCustomButton({",
+      "\t\t@required this.function,",
+      "\t\t@required this.text,",
+      "\t\tthis.splashColor = Colors.blueGrey,",
+      "\t\tthis.fontSize = 16,",
+      "\t\tthis.color = Colors.blue,",
+      "\t\tthis.textColor = Colors.white,",
+      "\t});",
       "",
-      "get $1 => this._$1.value;",
-      "",
-      "set $1(value) => this._$1.value = value;",
-      "",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "\t\treturn RaisedButton(",
+      "\t\t\tsplashColor: this.splashColor,",
+      "\t\t\tonPressed: ()=> this.function,",
+      "\t\t\tcolor: this.color,",
+      "\t\t\tchild: Text(",
+      "\t\t\t\tthis.text,",
+      "\t\t\t\tstyle: TextStyle(",
+      "\t\t\t\t\tcolor: this.textColor,",
+      "\t\t\t\t\tfontSize: this.fontSize,",
+      "\t\t\t\t),",
+      "\t\t\t),",
+      "\t\t);",
+      "\t}",
+      "}"
     ],
-    "description": "Generate final, get and setter. "
+    "description": "Generate a stateless class with a RaisedButton that can be reused by more than one widget."
   },
 }
