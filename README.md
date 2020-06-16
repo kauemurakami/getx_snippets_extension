@@ -203,7 +203,7 @@ wait for the snippet, set the variable and function and you're done !
 ### getbutton
 Quickly create a RaisedButton widget.  
 **getbutton** A simple RaisedButton will return.  
-**Using:**In any file that contains the material, start writing **getbutton**,  
+**Using:** In any file that contains the material, start writing **getbutton**,  
 wait for the snippet, set the variable and function and you're done !  
 
 ![](examples/getbutton.gif)
