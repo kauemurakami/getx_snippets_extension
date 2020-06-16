@@ -6,7 +6,7 @@ Extension made for you, who also uses this powerful library and doesn't like to 
 To that extent, you find snippets of snippets of code, or even entire classes, generated with just a few keystrokes, 
 it's quick and easy.  
 We came to make your development with [Get](https://pub.dev/packages/get) easy !!!    
-So get out front and start using, it's just 11 snippets, with fully intuitive prefixes, so you don't forget :D  
+So get out front and start using, it's just 21 snippets, with fully intuitive prefixes, so you don't forget :D  
 > The extension was made so that we can start a complete functional project without any necessary changes.
 
 #### download extension on [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
