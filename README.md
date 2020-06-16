@@ -213,6 +213,10 @@ he widgets component snippets were created thinking about those, who like me, li
 They will bring you a complete widget with input values, so you can use it at different times
 
 ### getxformwidget
+<pre>
+dependencies:
+  validators: ^2.0.0
+</pre>
 Quickly create a GetX widget from [Get](https://pub.dev/packages/get) containing a fully customized form widget.  
 **getxformwidget** You will be returned with a GetX Widget containing a functional form.  
 **Using:** In any widget that has the Get package and material/cupertino, start writing **getxformwidget**,  
