@@ -60,7 +60,7 @@ dependencies:
 [See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
 not yet available
 ## Features
-### Classes
+## Classes
 ### getmain
 Quickly rewrite your file **main.dart**  
 **getmain** snippet will bring you the complete class, you just need to set your **home**  
@@ -128,7 +128,7 @@ Has the same purpose as getprovider, but for people who use Dio instead of http.
 
 ![](examples/getproviderdio.gif)
 
-### Functions and variables
+## Functions and variables
 ### getfinal
 Quickly create variables **final observável** for [Get](https://pub.dev/packages/get).  
 **getfinal** snippet, will bring you an observable final variable and its methods **get** and **set**.  
@@ -153,7 +153,7 @@ wait for the snippet, set the variable name and you're done !
 
 ![](examples/getget.gif)
 
-### Widgets
+## Widgets
 ### getxlist
 Quickly create a widget **GetX** from [Get](https://pub.dev/packages/get) containing a functional dynamic list, consuming your controller .  
 **getxlist** this snippet will bring you the [Get](https://pub.dev/packages/get) widget, GetX, along with
@@ -177,7 +177,7 @@ wait for the snippet, set the variable and function name and you're done !
 ### result
 ![](examples/getxlistdismissibleresult.gif)
 
-### Widgets Components
+## Widgets Components
 
 
 ## Releases Notes
