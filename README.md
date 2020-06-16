@@ -1,4 +1,4 @@
-# get-snippets
+# getx-snippets
 [![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension)  
 ![](images/icon_readme.png)
 
@@ -60,6 +60,15 @@ dependencies:
 [See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
 not yet available
 ## Features
+- [Classes](#classes)  
+  Here you will find snippets that generate incredible complete classes quickly and easily.  
+- [Functions and Variables](#functions-and-variables)  
+  Here you will find snippets that will help you to create various types of variables and functions quickly and easily.  
+- [Widgets](#widgets)  
+  Here you will find snippets that will help you create widgets quickly and easily.  
+- [Widgets Component](#widgets)  
+  Here you will find reusable widgets, made in a stateless widgets ready to be consumed by several widgets.  
+
 ## Classes
 ### getmain
 Quickly rewrite your file **main.dart**  
