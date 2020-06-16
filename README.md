@@ -6,7 +6,7 @@ Extension made for you, who also uses this powerful library and doesn't like to 
 To that extent, you find snippets of snippets of code, or even entire classes, generated with just a few keystrokes, 
 it's quick and easy.  
 We came to make your development with [Get](https://pub.dev/packages/get) easy !!!    
-So get out front and start using, it's just 11 snippets, with fully intuitive prefixes, so you don't forget :D  
+So get out front and start using, it's just 21 snippets, with fully intuitive prefixes, so you don't forget :D  
 > The extension was made so that we can start a complete functional project without any necessary changes.
 
 #### download extension on [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
@@ -201,8 +201,8 @@ wait for the snippet, set the variable and function name and you're done !
 ![](examples/getxlistdismissibleresult.gif)
 
 ### getfab
-Quickly create a RaisedButton widget.  
-**getfab** A simple RaisedButton will return.  
+Quickly create a FloatingActionButton widget.  
+**getfab** A simple FloatingActionButton will return.  
 **Using:** In any file that contains the material, start writing **getfab**,  
 wait for the snippet, set the variable and function and you're done !  
 
@@ -221,6 +221,10 @@ he widgets component snippets were created thinking about those, who like me, li
 They will bring you a complete widget with input values, so you can use it at different times
 
 ### getxformwidget
+<pre>
+dependencies:
+  validators: ^2.0.0
+</pre>
 Quickly create a GetX widget from [Get](https://pub.dev/packages/get) containing a fully customized form widget.  
 **getxformwidget** You will be returned with a GetX Widget containing a functional form.  
 **Using:** In any widget that has the Get package and material/cupertino, start writing **getxformwidget**,  
@@ -248,8 +252,12 @@ wait for the snippet, set the variable and function name and you're done !
 
 
 ## Releases Notes
+### 2.5.0
+getx-snippets release 2.5  
+:octopus: New Features :octopus:  
+Thinking to further facilitate your development process, we created complete reusable components, some of which were already added in this release, others will come with more news in 3.0  
 
-### 2.0.0 - current  
+### 2.0.0
 get-snippets release 2.  
 :octopus: New Features :octopus:  
 You can now create dynamic lists. With the getxlist snippet we will treat you:  
