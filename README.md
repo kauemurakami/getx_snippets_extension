@@ -78,6 +78,14 @@ wait for the snippet and that's it !
 
 ![](examples/getmain.gif)
 
+### getmodel
+Create classes for your objects quickly and easily.    
+**getmodel** snippet a complete model will return, with the functions fromJson and toJson.   
+**Using:** In an empty file, start writing **getmodel**,  
+Wait for the snippet, name your class and you're done
+
+![](examples/getmodel.gif)
+
 ### getpage
 Quickly create, Stateless classes with widget and reactive features provided by [Get](https://pub.dev/packages/get), GetX,  
 **getpage** snippet, will bring you a complete stateless class, you only need to indicate:  
