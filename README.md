@@ -66,7 +66,7 @@ not yet available
   Here you will find snippets that will help you to create various types of variables and functions quickly and easily.  
 - [Widgets](#widgets)  
   Here you will find snippets that will help you create widgets quickly and easily.  
-- [Widgets Component](#widgets)  
+- [Widgets Component](#widgets-components)  
   Here you will find reusable widgets, made in a stateless widgets ready to be consumed by several widgets.  
 
 ## Classes
@@ -162,6 +162,12 @@ wait for the snippet, set the variable name and you're done !
 
 ![](examples/getget.gif)
 
+### getwidget
+Quickly instantiate your custom widgets.    
+**getwidget** It only serves for you to retrieve a custom widget in a practical way.  
+**Using:** In any file that has the material, just start writing **getwidget**,  
+wait for the snippet, set the widget name and you're done !
+
 ## Widgets
 ### getxlist
 Quickly create a widget **GetX** from [Get](https://pub.dev/packages/get) containing a functional dynamic list, consuming your controller .  
@@ -186,7 +192,51 @@ wait for the snippet, set the variable and function name and you're done !
 ### result
 ![](examples/getxlistdismissibleresult.gif)
 
+### getfab
+Quickly create a RaisedButton widget.  
+**getfab** A simple RaisedButton will return.  
+**Using:** In any file that contains the material, start writing **getfab**,  
+wait for the snippet, set the variable and function and you're done !  
+
+![](examples/getfab.gif)
+
+### getbutton
+Quickly create a RaisedButton widget.  
+**getbutton** A simple RaisedButton will return.  
+**Using:**In any file that contains the material, start writing **getbutton**,  
+wait for the snippet, set the variable and function and you're done !  
+
+![](examples/getbutton.gif)
+
 ## Widgets Components
+he widgets component snippets were created thinking about those, who like me, like reusable componentizat widgets.
+They will bring you a complete widget with input values, so you can use it at different times
+
+### getxformwidget
+Quickly create a GetX widget from [Get](https://pub.dev/packages/get) containing a fully customized form widget.  
+**getxformwidget** You will be returned with a GetX Widget containing a functional form.  
+**Using:** In any widget that has the Get package and material/cupertino, start writing **getxformwidget**,  
+Wait for the snippet, and that's it, now just use this widget component in the view you want, and you can customize it or not !
+>**Note** that we are not initializing our controller in the example. This is because we are assuming that you are calling this form in a "login" class, where we start it.
+>This is because the view that is consuming this widget has the same controller, this was possible because we used 'asignId: true' in our GetX widget 
+
+![](examples/getxformwidget.gif)
+
+### getbuttonwidget
+Create a reusable button quickly and easily. and dismissible widgets.  
+**getbuttonwidget** You will be returned with a button that can be reused in different locations, so we set parameters to facilitate customizing taking into account the context it is inserted in.  
+**Using:** In any widget that has the material, start writing **getbuttonwidget**,  
+wait for the snippet, and ready, now just use it wherever you want !  
+
+![](examples/getfabwidget.gif)
+
+### getfabwidget
+Create a reusable button quickly and easily. and dismissible widgets.  
+**getfabwidget** You will be returned with a fab button that can be reused in different locations, so we set parameters to facilitate customizing taking into account the context it is inserted in.  
+**Using:** In any widget that has the Get package, start writing **getfabwidget**,  
+wait for the snippet, set the variable and function name and you're done !  
+
+![](examples/getbuttonwidget.gif)
 
 
 ## Releases Notes
