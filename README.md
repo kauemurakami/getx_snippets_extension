@@ -193,8 +193,8 @@ wait for the snippet, set the variable and function name and you're done !
 ![](examples/getxlistdismissibleresult.gif)
 
 ### getfab
-Quickly create a RaisedButton widget.  
-**getfab** A simple RaisedButton will return.  
+Quickly create a FloatingActionButton widget.  
+**getfab** A simple FloatingActionButton will return.  
 **Using:** In any file that contains the material, start writing **getfab**,  
 wait for the snippet, set the variable and function and you're done !  
 
