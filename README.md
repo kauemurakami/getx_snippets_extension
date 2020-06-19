@@ -100,21 +100,21 @@ wait for the snippet, define the necessary data and ready!!
 
 ![](examples/getpage.gif)
 
-### getroutes
+### getroutepages
 Quickly create, a class to manage your Routes with [Get](https://pub.dev/packages/get)  
-**getroutes** snippet, will bring you a complete Route class, you just need to add more routes.  
-**Using:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutes**,  
+**getroutepages** snippet, will bring you a complete Route class, you just need to add more routes.  
+**Using:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutepages**,  
 wait for the snippet and that's it !
 
-![](examples/getroutes.gif)
+![](examples/getroutepages.gif)
 
-### getroute
+### getroutepage
 Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
-**getroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
-**Using:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroute**,  
+**getroutepage** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
+**Using:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroutepage**,  
 wait for the snippet and that's it !
 
-![](examples/getroute.gif)
+![](examples/getroutepage.gif)
 
 ### getcontroller
 Quickly create Controller classes with RxController from [Get](https://pub.dev/packages/get).  
@@ -175,6 +175,14 @@ Quickly instantiate your custom widgets.
 **getwidget** It only serves for you to retrieve a custom widget in a practical way.  
 **Using:** In any file that has the material, just start writing **getwidget**,  
 wait for the snippet, set the widget name and you're done !
+
+### getargs
+Quickly retrieve items sent from other locations.    
+**getargs** 
+it will simply return a GetX object, Get.arguments, if you have sent any value through it, otherwise it will be empty or null.  
+**Using:** In any empty file that imports Get, start typing **getargs**,  
+wait for the snippet, seven the parameter name or retrieve all the arguments and and you're done !
+![](examples/getargs.gif)
 
 ## Widgets
 ### getxlist

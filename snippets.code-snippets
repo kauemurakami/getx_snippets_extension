@@ -18,26 +18,32 @@
     "description": "Generate GetController."
   },
   "GetRoutes Snippet": {
-    "prefix": "getroutes",
+    "prefix": "getroutespages",
     "body": [
       "import 'package:get/get.dart';",
       "",
       "class MyRoutes {",
       "",
-      "\tstatic final routes = {",
-      "\t\t'/' : GetRoute(page: MyHomePage()),",
-      "\t\t'/second' : GetRoute(page: SecondPage()),",
-      "\t};",
+      "\tstatic final routes = [",
+      "\t\tGetPage(name: '/', page:()=> MyHomePage(),)",
+      "\t];",
       "}"
     ],
     "description": "Generate file routes."
   },
   "GetRoute Snippet": {
-    "prefix": "getroute",
+    "prefix": "getroutepage",
     "body": [
-      "'/${1:myRoute}' : GetRoute(page: ${2:My}Page()),",
+      "GetPage(name: '/${1:myRoute}', page:()=> ${2:My}Page()),",
     ],
     "description": "Generate route."
+  },
+  "GetArgs Snippet": {
+    "prefix": "getargs",
+    "body": [
+      "Get.arguments${1:['']};",
+    ],
+    "description": "Generate Get.arguments['']."
   },
   "GetPage Snippet": {
     "prefix": "getpage",
@@ -241,7 +247,7 @@
       "\t\tGetMaterialApp(",
       "\t\t\t\tdebugShowCheckedModeBanner: false,",
       "\t\t\t\tdefaultTransition: Transition.fade,",
-      "\t\t\t\tnamedRoutes: MyRoutes.routes,",
+      "\t\t\t\tgetPages: MyRoutes.routes,",
       "\t\t\t\thome: MyHomePage(),",
       "\t\t)",
       "\t);",
