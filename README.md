@@ -123,6 +123,7 @@ Quickly create Controller classes with RxController from [Get](https://pub.dev/p
 wait for the snippet, set the data and you're done!
 
 ![](examples/getcontroller.gif)
+Or, for a **simple controller**, **getcontrollervoid**.
 
 ### getrepository
 Quickly create Repository classes for your entities.  
@@ -144,6 +145,13 @@ wait for the snippet, set the data and you're done !
 Has the same purpose as getprovider, but for people who use Dio instead of http.
 
 ![](examples/getproviderdio.gif)
+
+### gettheme
+
+This snippet will bring you a final ThemeData, where you can customize the entire theme of your application, such as texts, buttons, colors and more.   
+Start typing gettheme, wait for the snippet and go!
+![](examples/gettheme.gif)
+
 
 ## Functions and variables
 ### getfinal
