@@ -269,6 +269,9 @@ wait for the snippet, set the variable and function name and you're done !
 
 ## Releases Notes
 ### 2.5.0
+
+WELCOME GETX 3.0 !!!  
+
 getx-snippets release 2.5  
 :octopus: New Features :octopus:  
 Thinking to further facilitate your development process, we created complete reusable components, some of which were already added in this release, others will come with more news in 3.0  
