@@ -10,7 +10,7 @@ So get out front and start using, it's just 21 snippets, with fully intuitive pr
 > The extension was made so that we can start a complete functional project without any necessary changes.
 
 #### download extension on [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
-#### If you are with us until now or just arrived, you will also like this documentation that I have prepared with love to help you :heart: use GetX in an easy and intuitive way! know [getx_pattern]()  
+#### If you are with us until now or just arrived, you will also like this documentation that I have prepared with love to help you :heart: use GetX in an easy and intuitive way! know [getx_pattern](https://kauemurakami.github.io/getx_pattern/)  
 ## Requirements
 ```
 vscode ^1.43.0
