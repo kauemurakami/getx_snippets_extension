@@ -5,7 +5,7 @@
       "import 'package:get/get.dart';",
       "import 'package:meta/meta.dart';",
       "",
-      "class ${1:My}Controller extends RxController {",
+      "class ${1:My}Controller extends GetxController {",
       "",
       "\tfinal ${2:My}Repository repository;",
       "\t$1Controller({@required this.repository}) : assert(repository != null);",
@@ -23,7 +23,7 @@
       "body": [
         "import 'package:get/get.dart';",
         "",
-        "class ${1:My}Controller extends RxController {",
+        "class ${1:My}Controller extends GetxController {",
         "",
         "}"
       ],
@@ -44,7 +44,7 @@
         "\t),",
         ");"
       ],
-      "description": "Generate void GetController."
+      "description": "Generate var theme."
     },
   
   "GetRoutes Snippet": {
