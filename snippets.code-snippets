@@ -508,7 +508,7 @@
     "description": "Generate a stateless class with a FloatingActionButton that can be reused by more than one widget."
   },
   "GetForm Snippet": {
-    "prefix": "getxformwidget",
+    "prefix": "getformwidget",
     "body": [
       "import 'package:flutter/material.dart';",
       "import 'package:get/get.dart';",
@@ -574,6 +574,6 @@
       "\t}",
       "}",
     ],
-    "description": "Generate a stateless class with a Form that can be reused by more than one widget."
+    "description": "Generate a Form Widget with getx components."
   },
 }

@@ -22,6 +22,10 @@
     "type": "git",
     "url": "git+https://github.com/kauemurakami/get_snippets_extension.git"
   },
+
+
+
+  
   "contributes": {
     "snippets": [
       {
@@ -30,16 +34,20 @@
       }
     ]
   },
+
+
+  
   "bugs": {
     "url": "https://github.com/kauemurakami/get_snippets_extension/issues"
   },
   "directories": {
     "example": "examples"
   },
-  
   "author": "kauetmurakami",
   "license": "ISC",
   "dependencies": {
+    "node-fetch": "^2.6.0",
+    "vscode": "^1.1.37",
     "vss-web-extension-sdk": "^5.141.0"
   }
 }
