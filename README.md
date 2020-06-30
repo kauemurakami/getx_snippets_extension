@@ -193,11 +193,11 @@ wait for the snippet, seven the parameter name or retrieve all the arguments and
 ![](examples/getargs.gif)
 
 ## Widgets
-### getxlist
+### getlist
 Quickly create a widget **GetX** from [Get](https://pub.dev/packages/get) containing a functional dynamic list, consuming your controller .  
-**getxlist** this snippet will bring you the [Get](https://pub.dev/packages/get) widget, GetX, along with
+**getlist** this snippet will bring you the [Get](https://pub.dev/packages/get) widget, GetX, along with
 some optional attributes and its builder function, which in turn contains a listview.separated with a child listtile to display values.  
-**Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getxlist**,  
+**Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getlist**,  
 wait for the snippet, set the variable name and you're done !  
 > Notice that in the example we are using ***initState*** to enter a value for our variable. 
 >We did this so that you can see that a statefull widget is not necessary when using ***Get***, you could start your page by calling >a ***controller function*** that retrieves all your users and inserting them into a ***variable in your controller***, for example, then just use >the same controller your controller inside the GetX widget.
@@ -206,10 +206,10 @@ wait for the snippet, set the variable name and you're done !
 ### result
 ![](examples/getxlist.jpeg)
 
-### getxlistdismissible
+### getlistdismissible
 Quickly create a GetX widget from [Get](https://pub.dev/packages/get) containing a fully configured listview and dismissible widgets.  
-**getxlistdismissible** it will bring you, a GetX Widget, a ListView containing a Dismissible ready to use, you can drag from beginning to end to edit or from end to beginning to delete, just create your functions in the controller.  
-**Using:** In any widget that has the Get package, start writing **getxlistdismissible**,  
+**getlistdismissible** it will bring you, a GetX Widget, a ListView containing a Dismissible ready to use, you can drag from beginning to end to edit or from end to beginning to delete, just create your functions in the controller.  
+**Using:** In any widget that has the Get package, start writing **getlistdismissible**,  
 wait for the snippet, set the variable and function name and you're done !  
 
 ![](examples/getxlistdismissible.gif)
@@ -236,14 +236,14 @@ wait for the snippet, set the variable and function and you're done !
 he widgets component snippets were created thinking about those, who like me, like reusable componentizat widgets.
 They will bring you a complete widget with input values, so you can use it at different times
 
-### getxformwidget
+### getformwidget
 <pre>
 dependencies:
   validators: ^2.0.0
 </pre>
 Quickly create a GetX widget from [Get](https://pub.dev/packages/get) containing a fully customized form widget.  
-**getxformwidget** You will be returned with a GetX Widget containing a functional form.  
-**Using:** In any widget that has the Get package and material/cupertino, start writing **getxformwidget**,  
+**getformwidget** You will be returned with a GetX Widget containing a functional form.  
+**Using:** In any widget that has the Get package and material/cupertino, start writing **getformwidget**,  
 Wait for the snippet, and that's it, now just use this widget component in the view you want, and you can customize it or not !
 >**Note** that we are not initializing our controller in the example. This is because we are assuming that you are calling this form in a "login" class, where we start it.
 >This is because the view that is consuming this widget has the same controller, this was possible because we used 'asignId: true' in our GetX widget 
@@ -279,7 +279,7 @@ Thinking to further facilitate your development process, we created complete reu
 ### 2.0.0
 get-snippets release 2.  
 :octopus: New Features :octopus:  
-You can now create dynamic lists. With the getxlist snippet we will treat you:  
+You can now create dynamic lists. With the getlist snippet we will treat you:  
 - GetX widget with optional attributes and its mandatory builder function  
 - A configured ListView.separated  
 - A ListTile to simulate your list  
