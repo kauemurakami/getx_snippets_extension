@@ -46,9 +46,11 @@
   "author": "kauetmurakami",
   "license": "ISC",
   "dependencies": {
-    "cliapp": "^1.1.4",
-    "node-fetch": "^2.6.0",
+    "change-case": "^3.1.0",
+    "lodash": "^4.17.15",
+    "mkdirp": "^0.5.1",
     "vscode": "^1.1.37",
+    "semver": "^6.3.0",
     "vss-web-extension-sdk": "^5.141.0",
     "yarn": "^1.22.4"
   },
