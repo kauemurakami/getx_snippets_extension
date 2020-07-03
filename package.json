@@ -9,7 +9,8 @@
   },
   "icon": "images/icon.png",
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Programming Languages"
   ],
   "keywords": [
     "dart",
@@ -22,11 +23,13 @@
     "type": "git",
     "url": "git+https://github.com/kauemurakami/get_snippets_extension.git"
   },
-
-
-
-  
   "contributes": {
+    "commands": [
+      {
+        "command": "extension.init-project",
+        "title": "Init project getx_pattern"
+      }
+    ],
     "snippets": [
       {
         "language": "dart",
@@ -34,9 +37,6 @@
       }
     ]
   },
-
-
-  
   "bugs": {
     "url": "https://github.com/kauemurakami/get_snippets_extension/issues"
   },
@@ -46,8 +46,14 @@
   "author": "kauetmurakami",
   "license": "ISC",
   "dependencies": {
+    "cliapp": "^1.1.4",
     "node-fetch": "^2.6.0",
     "vscode": "^1.1.37",
-    "vss-web-extension-sdk": "^5.141.0"
+    "vss-web-extension-sdk": "^5.141.0",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.1",
+    "vscode": "^1.1.33"
   }
 }
