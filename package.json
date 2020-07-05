@@ -12,6 +12,10 @@
     "Snippets",
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onCommand:extension.create-new-folder"
+  ],
+  "main": "./out/extension.js",
   "keywords": [
     "dart",
     "flutter",
@@ -26,8 +30,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.init-project",
-        "title": "Init project getx_pattern"
+        "command": "extension.create-new-folder",
+        "title": "Init getx_pattern project"
       }
     ],
     "snippets": [
@@ -46,9 +50,6 @@
   "author": "kauetmurakami",
   "license": "ISC",
   "dependencies": {
-    "change-case": "^3.1.0",
-    "lodash": "^4.17.15",
-    "mkdirp": "^0.5.1",
     "vscode": "^1.1.37",
     "semver": "^6.3.0",
     "vss-web-extension-sdk": "^5.141.0",
@@ -57,5 +58,12 @@
   "devDependencies": {
     "typescript": "^3.5.1",
     "vscode": "^1.1.33"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
   }
 }

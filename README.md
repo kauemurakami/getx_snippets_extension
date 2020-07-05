@@ -86,6 +86,14 @@ Wait for the snippet, name your class and you're done
 
 ![](examples/getmodel.gif)
 
+### getrxmodel
+Create classes observable along with a dart class for your objects quickly and easily.    
+**getrxmodel** snippet a complete model will return, with the functions fromJson and toJson.   
+**Using:** In an empty file, start writing **getrxmodel**,  
+Wait for the snippet, name your class and you're done
+
+![](examples/getrxmodel.gif)
+
 ### getpage
 Quickly create, Stateless classes with widget and reactive features provided by [Get](https://pub.dev/packages/get), GetX,  
 **getpage** snippet, will bring you a complete stateless class, you only need to indicate:  
@@ -100,21 +108,39 @@ wait for the snippet, define the necessary data and ready!!
 
 ![](examples/getpage.gif)
 
-### getroutepages
+### getpagesroutes
 Quickly create, a class to manage your Routes with [Get](https://pub.dev/packages/get)  
 **getroutepages** snippet, will bring you a complete Route class, you just need to add more routes.  
-**Using:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutepages**,  
-wait for the snippet and that's it !
+**Using:** When creating a file ***app_pages.dart*** empty, you can start by writing **getpagesroutes**,  
+wait for the snippet and that's it !  
+We decided to separate your routes from their ** getpage ** functions through a ** part and part of ** so that your file is smaller and can make it easier to refactor your project, changing your routepage only in its ** app_routes file constant. dart **
 
-![](examples/getroutepages.gif)
+![](examples/getpagesroutes.gif)
 
-### getroutepage
+### getpageroute
 Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
-**getroutepage** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
-**Using:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroutepage**,  
+**getpageroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
+**Using:** Inside the file ***app_pages.dart***, in our class created with *getpagesroutes*, you can start by writing **getpageroute** for adding new route page !  
 wait for the snippet and that's it !
 
-![](examples/getroutepage.gif)
+![](examples/getpageroute.gif)
+
+### getroutes
+Now that you have our App Pages class in our **app_pages.dart** file, let's create a new file at the same level, within the routes folder.  
+Give it the name **app_routes**, it will only be responsible for saving your routes in constants, this will facilitate the **location** of your routes and you can exchange all the flames of a **single** route just by changing the value of your constant for that. So come on.  
+with the **app_routes.dart** file created, start typing **getroutes**.  
+This will return us a small abstract class with its constants and some example routes :D 
+
+![](examples/getroutes.gif)
+
+### getroute
+Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
+**getroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
+**Using:** Inside the file ***app_routes.dart***, in our class created with *getroutes*, you can start by writing **getroute**,  
+wait for the snippet and that's it !
+
+![](examples/getroute.gif)
+
 
 ### getcontroller
 Quickly create Controller classes with RxController from [Get](https://pub.dev/packages/get).  
@@ -154,27 +180,27 @@ Start typing gettheme, wait for the snippet and go!
 
 
 ## Functions and variables
-### getfinal
+### getfinal and getfinal_
 Quickly create variables **final observável** for [Get](https://pub.dev/packages/get).  
 **getfinal** snippet, will bring you an observable final variable and its methods **get** and **set**.  
 **Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getfinal**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, choice between private or not, set the variable name and you're done !
 
 ![](examples/getfinal.gif)
 
-### getset
+### getset and getset_
 Quickly create a function **set** for an observable [Get](https://pub.dev/packages/get).  
 **getset** snippet, will bring you a function to assign a value in your observable.  
 **Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getset**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, choice between private or not, set the variable name and you're done !
 
 ![](examples/getset.gif)
 
-### getget
+### getget and getget_
 Quickly create a function **get** para um observável [Get](https://pub.dev/packages/get).  
 **getget** snippet, will bring you a function to recover the value of your observable.  
 **Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getget**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, choice between private or not ,set the variable name and you're done !
 
 ![](examples/getget.gif)
 
@@ -182,6 +208,12 @@ wait for the snippet, set the variable name and you're done !
 Quickly instantiate your custom widgets.    
 **getwidget** It only serves for you to retrieve a custom widget in a practical way.  
 **Using:** In any file that has the material, just start writing **getwidget**,  
+wait for the snippet, set the widget name and you're done !
+
+### getx
+A simple getx Widget with shortcuts for controller name will return**getx**.  
+It only serves for you to retrieve a custom widget in a practical way.  
+**Using:** In any file that has the material, just start writing **getx**,  
 wait for the snippet, set the widget name and you're done !
 
 ### getargs

@@ -47,27 +47,55 @@
       "description": "Generate var theme."
     },
   
-  "GetRoutes Snippet": {
-    "prefix": "getroutespages",
+  "GetRoutingPages Snippet": {
+    "prefix": "getpagesroutes",
     "body": [
       "import 'package:get/get.dart';",
+      "part './app_routes.dart';",
       "",
-      "class MyRoutes {",
+      "abstract class AppPages {",
       "",
-      "\tstatic final routes = [",
-      "\t\tGetPage(name: '/', page:()=> MyHomePage(),)",
+      "\tstatic final pages = [",
+      "\t\tGetPage(name: Routes.HOME, page:()=> MyHomePage(),)",
       "\t];",
+      "}"
+    ],
+    "description": "Generate file pages."
+  },
+  
+  "GetRoutingPage Snippet": {
+    "prefix": "getpageroute",
+    "body": [
+      "GetPage(name: Routes.${1:CONST_ROUTE}, page:()=> ${2:My}Page()),",
+    ],
+    "description": "Generate routes pages."
+  },
+
+  "GetRoutesFile Snippet": {
+    "prefix": "getroutes",
+    "body": [
+      "part of './app_pages.dart';",
+
+      "abstract class Routes{",
+      "",
+      "\tstatic const INITIAL = '/';",
+      "\tstatic const HOME = '/home';",
+      "\tstatic const LOGIN = '/login';",
+      "\tstatic const CADASTRO = '/cadastro';",
       "}"
     ],
     "description": "Generate file routes."
   },
   "GetRoute Snippet": {
-    "prefix": "getroutepage",
+    "prefix": "getroute",
     "body": [
-      "GetPage(name: '/${1:myRoute}', page:()=> ${2:My}Page()),",
+
+      "\tstatic const ${1:MYROUTE} = '/${2:caminho-rota}';",
+      
     ],
-    "description": "Generate route."
+    "description": "Generate file routes."
   },
+
   "GetArgs Snippet": {
     "prefix": "getargs",
     "body": [
@@ -75,7 +103,7 @@
     ],
     "description": "Generate Get.arguments['']."
   },
-  "GetPage Snippet": {
+  "GetPageView Snippet": {
     "prefix": "getpage",
     "body": [
       "import 'package:flutter/material.dart';",
@@ -105,6 +133,74 @@
       "}"
     ],
     "description": "Generate Page."
+  },
+  "GetPageVoid Snippet": {
+    "prefix": "getpagevoid",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "import 'package:get/get.dart';",
+      "",
+      "class ${1:My}Page extends StatelessWidget {",
+      "",
+      "\t@override",
+      "\tWidget build(BuildContext context) {",
+      "",
+      "\t\treturn Scaffold(",
+      "\t\tappBar: AppBar(title: Text('$1Page')),",
+      "",
+      "\t\tbody: ${3:Container}(",
+      "\t\t\tchild: ",
+      "\t\t\t),",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Generate Page void."
+  },
+  "GetX Snippet": {
+    "prefix": "getx",
+    "body": [
+      "GetX<${1:My}Controller>(",
+      "\tinit: ${1:My}Controller(repository: repository),",
+      "\tbuilder: (_) => Text(_.var),",
+      "",
+      ")"
+    ],
+    "description": "Generate simple GetX Widget."
+  },
+  "GetRxModel Snippet": {
+    "prefix": "getrxmodel",
+    "body": [
+      "import 'package:get/get.dart';",
+      "class Rx${1:My}Model {",
+      "",
+      "\tfinal id = 0.obs;",
+      "\tfinal nome = 'nome'.obs;",
+      "}",
+      "class ${1:My}Model {",
+      "\t$1Model({ id, nome });",
+      "",
+      "final rx = Rx${1:My}Model();",
+      "",
+      "get nome => rx.nome.value;",
+      "set nome(value) => rx.nome.value = value;",
+      "",
+      "get id => rx.id.value;",
+      "set id(value) => rx.id.value = value;",
+      "",
+      "\t$1Model.fromJson(Map<String, dynamic> json){",
+      "\t\t\tthis.id = json['id'];",
+      "\t\t\tthis.nome = json['nome'];",
+      "\t}",
+      "",
+      "\tMap<String, dynamic> toJson(){",
+      "\t\tfinal Map<String, dynamic> data = new Map<String, dynamic>();",
+      "\t\tdata['nome'] = this.nome;",
+      "\t\treturn data;",
+      "\t}",
+      "}",
+    ],
+    "description": "Generate RxModel and Model."
   },
   "GetModel Snippet": {
     "prefix": "getmodel",
@@ -279,7 +375,7 @@
       "\t\t\t\tinitialRoute: '/',",
       "\t\t\t\ttheme: appThemeData,",
       "\t\t\t\tdefaultTransition: Transition.fade,",
-      "\t\t\t\tgetPages: MyRoutes.routes,",
+      "\t\t\t\tgetPages: AppPages.pages,",
       "\t\t\t\thome: MyHomePage(),",
       "\t\t)",
       "\t);",
@@ -287,34 +383,55 @@
     ],
     "description": "Replace Main file."
   },
-  "GetGet Snippet": {
-    "prefix": "getget",
+  "GetGet_ Snippet": {
+    "prefix": "getget_",
     "body": [
       "get ${1:value} => this._$1.value;",
     ],
     "description": "Generate get value."
   },
-  "GetSet Snippet": {
-    "prefix": "getset",
+  "GetGet_Snippet": {
+    "prefix": "getget",
+    "body": [
+      "get ${1:value} => this.$1.value;",
+    ],
+    "description": "Generate get value."
+  },
+  "GetSet_ Snippet_": {
+    "prefix": "getset_",
     "body": [
       "set ${1:value}(value) => this._$1.value = value;",
     ],
     "description": "Generate set value."
   },
+  "GetSet Snippet": {
+    "prefix": "getset",
+    "body": [
+      "set ${1:value}(value) => this.$1.value = value;",
+    ],
+    "description": "Generate set value."
+  },
+  "GetFinal_ Snippet": {
+    "prefix": "getfinal_",
+    "body": [
+      "",
+      "final _${1:value} = ${2:''}.obs;",
+      "get $1 => this._$1.value;",
+      "set $1(value) => this._$1.value = value;",
+      "",
+    ],
+    "description": "Generate fully final, get and setter private. "
+  },
   "GetFinal Snippet": {
     "prefix": "getfinal",
     "body": [
       "",
-      "final _${1:value} = .obs;",
-      "",
-      "get $1 => this._$1.value;",
-      "",
-      "set $1(value) => this._$1.value = value;",
+      "final ${1:value} = ${2:''}.obs;",
       "",
     ],
-    "description": "Generate final, get and setter. "
+    "description": "Generate simple final obs, get and setter. "
   },
-  "GetXList Snippet": {
+  "GetList Snippet": {
     "prefix": "getlist",
     "body": [
       "",
@@ -345,7 +462,7 @@
     "description": "Generates a ListView with GetX widget, fully functional. "
   },
 
-  "GetXListDismissible Snippet": {
+  "GetListDismissible Snippet": {
     "prefix": "getlistdismissible",
     "body": [
       "",
