@@ -17,7 +17,7 @@ vscode ^1.43.0
 dependencies:
   flutter:
     sdk: flutter
-  get: ^2.12.1
+  get: ^3.0.1
   meta: ^1.1.8
   http: ^0.12.1 or dio: 3.x
 ```
@@ -29,7 +29,7 @@ dependencies:
 **Proposed structure -> subsequent changes will not change the current structure**
 <pre>
 |-- lib
-  |-- src
+  |-- app
     |-- controller
       |-- mycontrollerfolder
         |-- my_controller.dart 
@@ -52,7 +52,8 @@ dependencies:
       |-- theme
         |-- my_theme.dart
     |-- routes
-      |-- my_routes.dart
+      |-- app_routes.dart
+      |-- app_pages.dart
   |-- main.dart
 </pre>
 
