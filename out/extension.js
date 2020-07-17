@@ -1,28 +1,88 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deactivate = exports.activate = void 0;
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+exports.activate = exports.CodeActionProvider = exports.deactivate = void 0;
 const vscode = require("vscode");
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
-function activate(context) {
-    // Use the console to output diagnostic information (console.log) and errors (console.error)
-    // This line of code will only be executed once when your extension is activated
-    //console.log('Congratulations, your extension "create-new-folder" is now active!');
-    // The command has been defined in the package.json file
-    // Now provide the implementation of the command with registerCommand
-    // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.create-new-folder', () => {
-        // The code you place here will be executed every time your command is executed
-        // Display a message box to the user
-        vscode.window.showInformationMessage('gtx_pattern structure created !!!');
-        vscode.workspace.updateWorkspaceFolders(0, undefined, { uri: vscode.Uri.parse('http://www.balramchavan.com/some/path'), name: 'Init getx_pattern project' });
-    });
-    context.subscriptions.push(disposable);
-}
-exports.activate = activate;
-// this method is called when your extension is deactivated
 function deactivate() { }
 exports.deactivate = deactivate;
+function SpaceX() {
+    const editorX = vscode.window.activeTextEditor;
+    if (editorX && editorX.options.insertSpaces) {
+        return " ".repeat(editorX.options.tabSize);
+    }
+    return "\t";
+}
+class CodeActionProvider {
+    provideCodeActions() {
+        const editorX = vscode.window.activeTextEditor;
+        if (!editorX || editorX.selection.isEmpty) {
+            return [];
+        }
+        const pickedText = editorX.document.getText(editorX.selection);
+        //
+        var removeOne = pickedText.substring(pickedText.lastIndexOf("GetBuilder"), pickedText.lastIndexOf("return"));
+        console.log(removeOne);
+        //
+        const codeActions = [];
+        if (pickedText !== '') {
+            codeActions.push({
+                command: "get.wrapInGetx",
+                title: "Wrap with GetX"
+            });
+            codeActions.push({
+                command: "get.wrapInGetBuilder",
+                title: "Wrap with GetBuilder"
+            });
+            codeActions.push({
+                command: "get.wrapInObx",
+                title: "Wrap with Obx"
+            });
+        }
+        return codeActions;
+    }
+}
+exports.CodeActionProvider = CodeActionProvider;
+function insertSnippet(previously, behind, spacex, substitute, obx) {
+    const editorX = vscode.window.activeTextEditor;
+    if (editorX && editorX.selection.start !== editorX.selection.end) {
+        var choice = editorX.selection;
+        var sonny = editorX.document.getText(choice).trimLeft();
+        var line = editorX.document.lineAt(choice.start);
+        sonny = sonny.replace(new RegExp("\n\\s{" + line.firstNonWhitespaceCharacterIndex + "}", "gm"), "\n" + spacex);
+        if (substitute) {
+            if (sonny.substr(-1) === ",") {
+                sonny = sonny.substr(0, sonny.length - 1);
+                sonny += "";
+            }
+        }
+        else {
+            if (sonny.substr(-1) === ",") {
+                sonny = sonny.substr(0, sonny.length - 1);
+                sonny += ";";
+            }
+        }
+        var replaceSonny = previously + sonny + behind;
+        if (sonny.substr(-1) === "," ||
+            (sonny.substr(-1) === ";" && substitute)) {
+            if (obx) {
+                replaceSonny += ";";
+            }
+            else {
+                replaceSonny += ",";
+            }
+        }
+        editorX.insertSnippet(new vscode.SnippetString(replaceSonny), choice);
+    }
+}
+exports.activate = (context) => {
+    context.subscriptions.push(vscode.languages.registerCodeActionsProvider({ pattern: "**/*.{dart}", scheme: "file" }, new CodeActionProvider()));
+    context.subscriptions.push(vscode.commands.registerCommand("get.wrapInGetx", () => {
+        insertSnippet("GetX<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(${2:repository: repository}),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
+    }));
+    context.subscriptions.push(vscode.commands.registerCommand("get.wrapInGetBuilder", () => {
+        insertSnippet("GetBuilder<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(${2:repository: repository}),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
+    }));
+    context.subscriptions.push(vscode.commands.registerCommand("get.wrapInObx", () => {
+        insertSnippet("Obx(() =>" + " ", "),", SpaceX(), true, true);
+    }));
+};
 //# sourceMappingURL=extension.js.map
