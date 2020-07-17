@@ -77,7 +77,7 @@ not yet available
   Here you will find snippets that will help you create widgets quickly and easily.  
 - [Widgets Component](#widgets-components)  
   Here you will find reusable widgets, made in a stateless widgets ready to be consumed by several widgets.  
-- ###Now you can use Wrap with our extension, this makes it easy when you need to change a complex widget tree without headaches, see the available Wrappers  
+- ### Now you can use Wrap with our extension, this makes it easy when you need to change a complex widget tree without headaches, see the available Wrappers  
 - Wrap in GetX (alt + x)  
 - Wrap in Obx (alt + o)  
 - Wrap in GetBuilder (alt + g)  
