@@ -18,13 +18,7 @@ export class CodeActionProvider implements vscode.CodeActionProvider {
 			return [];
 		}
 		const pickedText = editorX.document.getText(editorX.selection);
-		//
-		var removeOne = pickedText.substring(
-			pickedText.lastIndexOf("GetBuilder"),
-			pickedText.lastIndexOf("return")
-		);
-		console.log(removeOne);
-		//
+
 		const codeActions = [];
 		if (pickedText !== '') {
 			codeActions.push({
@@ -103,7 +97,7 @@ export const activate = (context: vscode.ExtensionContext) => {
 		vscode.commands.registerCommand(
 			"get.wrapInGetx",
 			() => {
-				insertSnippet("GetX<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(${2:repository: repository}),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
+				insertSnippet("GetX<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
 			})
 	);
 
@@ -111,7 +105,7 @@ export const activate = (context: vscode.ExtensionContext) => {
 		vscode.commands.registerCommand(
 			"get.wrapInGetBuilder",
 			() => {
-				insertSnippet("GetBuilder<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(${2:repository: repository}),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
+				insertSnippet("GetBuilder<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
 			})
 	);
 
