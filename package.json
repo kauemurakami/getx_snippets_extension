@@ -1,69 +1,123 @@
 {
-  "publisher": "get-snippets",
-  "name": "get-snippets",
-  "displayName": "GetX Snippets",
-  "description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
-  "version": "2.5.0",
-  "engines": {
-    "vscode": "^1.2.0"
-  },
-  "icon": "images/icon.png",
-  "categories": [
-    "Snippets",
-    "Programming Languages"
-  ],
-  "activationEvents": [
-    "onCommand:extension.create-new-folder"
-  ],
-  "main": "./out/extension.js",
-  "keywords": [
-    "dart",
-    "flutter",
-    "angulardart",
-    "get",
-    "state-management"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kauemurakami/get_snippets_extension.git"
-  },
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.create-new-folder",
-        "title": "Init getx_pattern project"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "dart",
-        "path": "./snippets.code-snippets"
-      }
-    ]
-  },
-  "bugs": {
-    "url": "https://github.com/kauemurakami/get_snippets_extension/issues"
-  },
-  "directories": {
-    "example": "examples"
-  },
-  "author": "kauetmurakami",
-  "license": "ISC",
-  "dependencies": {
-    "vscode": "^1.1.37",
-    "semver": "^6.3.0",
-    "vss-web-extension-sdk": "^5.141.0",
-    "yarn": "^1.22.4"
-  },
-  "devDependencies": {
-    "typescript": "^3.5.1",
-    "vscode": "^1.1.33"
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile",
-    "test": "node ./out/test/runTest.js"
-  }
+	"name": "get-snippets",
+	"displayName": "GetX Snippets",
+	"description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
+	"version": "3.1.0",
+	"publisher": "get-snippets",
+	"engines": {
+		"vscode": "^1.2.0"
+	},
+	"categories": [
+		"Snippets",
+		"Programming Languages",
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:pubspec.yaml"
+	],
+	"keywords": [
+		"dart",
+		"flutter",
+		"angulardart",
+		"get",
+		"getX",
+		"state-management"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kauemurakami/get_snippets_extension.git"
+	},
+	"icon": "images/icon.png",
+	"author": "kauetmurakami",
+	"contributors": [
+		"thapp-com-br"
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kauemurakami/get_snippets_extension/issues"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "dart",
+				"path": "./snippets/snippets.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "get.wrapInGetx",
+				"title": "Wrap GetX",
+				"category": "Dart"
+			},
+			{
+				"command": "get.wrapInGetBuilder",
+				"title": "Wrap GetBuilder",
+				"category": "Dart"
+			},
+			{
+				"command": "get.wrapInObx",
+				"title": "Wrap Obx",
+				"category": "Dart"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "get.wrapInGetx",
+				"key": "alt+x",
+				"mac": "alt+x",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "get.wrapInGetBuilder",
+				"key": "alt+g",
+				"mac": "alt+g",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "get.wrapInObx",
+				"key": "alt+o",
+				"mac": "alt+o",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"menus": {
+		"explorer/context": [],
+		"commandPalette": [
+			{
+				"command": "get.wrapInGetx",
+				"when": "editorLangId == dart"
+			},
+			{
+				"command": "get.wrapInGetBuilder",
+				"when": "editorLangId == dart"
+			},
+			{
+				"command": "get.wrapInObx",
+				"when": "editorLangId == dart"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.2.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"@typescript-eslint/parser": "^2.30.0",
+		"@typescript-eslint/eslint-plugin": "^2.30.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
 }

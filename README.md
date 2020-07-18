@@ -6,7 +6,7 @@ Extension made for you, who also uses this powerful library and doesn't like to 
 To that extent, you find snippets of snippets of code, or even entire classes, generated with just a few keystrokes, 
 it's quick and easy.  
 We came to make your development with [Get](https://pub.dev/packages/get) easy !!!    
-So get out front and start using, it's just 21 snippets, with fully intuitive prefixes, so you don't forget :D  
+So get out front and start using, it's just 35 snippets, with fully intuitive prefixes, so you don't forget :D  
 > The extension was made so that we can start a complete functional project without any necessary changes.
 
 #### download extension on [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
@@ -17,7 +17,7 @@ vscode ^1.43.0
 dependencies:
   flutter:
     sdk: flutter
-  get: ^3.0.1
+  get: ^3.2.0 ou >
   meta: ^1.1.8
   http: ^0.12.1 or dio: 3.x
 ```
@@ -54,8 +54,16 @@ dependencies:
     |-- routes
       |-- app_routes.dart
       |-- app_pages.dart
+    |-- bindings
+      |-- My_binding.dart
+    |-- translations
+      |-- pt_br.dart
+        |-- pt_br_strings_consts.dart
+        |-- pt_br_translation_map.dart
   |-- main.dart
 </pre>
+
+[Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
 
 ## Example
 [See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
@@ -69,6 +77,11 @@ not yet available
   Here you will find snippets that will help you create widgets quickly and easily.  
 - [Widgets Component](#widgets-components)  
   Here you will find reusable widgets, made in a stateless widgets ready to be consumed by several widgets.  
+- ### Now you can use Wrap with our extension, this makes it easy when you need to change a complex widget tree without headaches, see the available Wrappers  
+- Wrap in GetX (alt + x)  
+- Wrap in Obx (alt + o)  
+- Wrap in GetBuilder (alt + g)  
+Using : Select your widget and click in lamp or use the shortcut.
 
 ## Classes
 ### getmain
@@ -300,42 +313,64 @@ wait for the snippet, set the variable and function name and you're done !
 ![](examples/getbuttonwidget.gif)
 
 
-## Releases Notes
-### 2.5.0
+### More awesome Snippets
+getPut
+getFind
+getLazyPut
+getSnackbar
+getDefaultDialog
+getDialog
+getBottomSheet
+getonInit
+getonClose
+getToNamed
+getOffNamed
+getOffAllNamed
+getTo
+getOff
+getOffAll
+getStorage
+getStorageWrite
+getStorageRead
 
-WELCOME GETX 3.0 !!!  
+
+## Releases Notes
+
+### 3.1.0
+
+WELCOME GETX 3.3 !!!  
 
 getx-snippets release 2.5  
 :octopus: New Features :octopus:  
-Thinking to further facilitate your development process, we created complete reusable components, some of which were already added in this release, others will come with more news in 3.0  
 
-### 2.0.0
-get-snippets release 2.  
-:octopus: New Features :octopus:  
-You can now create dynamic lists. With the getlist snippet we will treat you:  
-- GetX widget with optional attributes and its mandatory builder function  
-- A configured ListView.separated  
-- A ListTile to simulate your list  
-You can now create dynamic lists with dismissibles already configured for you. As? with the command getxlistdismissible, of cours.   you don't need to write the whole name, this is for your best fixation, just to be intuitive, just start writing and wait for the snippet.  
-- GetX widget with optional attributes and its mandatory builder function  
-- A configured ListView.separated  
-- A Dismissible Widget that allows you to perform actions by dragging items from the list TO BOTH SIDES, fully configured, just choose what to do with it !!!  
-- A ListTile to simulate your list  
+Wrap avaibles:
 
-- Generation of Provider class Dio and http   
-Start using and enjoy !!!
+Wrap in GetX (alt + x)
+Wrap in Obx (alt + o)
+Wrap in GetBuilder (alt + g)
 
-### 1.0.0
-get-snippets initial release.
-snippets para:  
-- Generetion of Model class 
-- Generation of Repository class  
-- Generation of Controller class  
-- Generation of Main class (**main**)  
-- Generation of Provider class  
-- Creating variables **.obs** together with their respective **get** e **set**  
-- Generation of **um** get **ou um** set  
-- Generation of class Routes and individual routes
+Using : Select your widget and click in lamp or use the shortcut.
+
+New Snippets:
+
+getPut
+getFind
+getLazyPut
+getSnackbar
+getDefaultDialog
+getDialog
+getBottomSheet
+getonInit
+getonClose
+getToNamed
+getOffNamed
+getOffAllNamed
+getTo
+getOff
+getOffAll
+getStorage
+getStorageWrite
+getStorageRead
 
 
 **Enjoy!**
