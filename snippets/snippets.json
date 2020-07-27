@@ -28,6 +28,23 @@
         ],
         "description": "Generate void GetController."
     },
+    "GetBindings Snippet": {
+        "prefix": "getbinding",
+        "body": [
+            "import 'package:get/get.dart';",
+            "import 'package:http/http.dart' as http;",
+            "",
+            "class ${1:MyPage}Binding implements Bindings {",
+            "@override",
+            "void dependencies() {",
+            "\tGet.lazyPut<${2:MyPage}Controller>(() => LandingController(",
+            "\t\trepository: ${3:MyUser}Repository(",
+            "\t\tapiClient: ${4:MyData}Provider(httpClient: http.Client()))));",
+            "\t}",
+            "}"
+        ],
+        "description": "Generate a Binding class."
+    },
     "GetTheme Snippet": {
         "prefix": "gettheme",
         "body": [
