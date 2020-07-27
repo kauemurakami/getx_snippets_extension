@@ -18,10 +18,6 @@ class CodeActionProvider {
             return [];
         }
         const pickedText = editorX.document.getText(editorX.selection);
-        //
-        var removeOne = pickedText.substring(pickedText.lastIndexOf("GetBuilder"), pickedText.lastIndexOf("return"));
-        console.log(removeOne);
-        //
         const codeActions = [];
         if (pickedText !== '') {
             codeActions.push({
@@ -76,10 +72,10 @@ function insertSnippet(previously, behind, spacex, substitute, obx) {
 exports.activate = (context) => {
     context.subscriptions.push(vscode.languages.registerCodeActionsProvider({ pattern: "**/*.{dart}", scheme: "file" }, new CodeActionProvider()));
     context.subscriptions.push(vscode.commands.registerCommand("get.wrapInGetx", () => {
-        insertSnippet("GetX<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(${2:repository: repository}),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
+        insertSnippet("GetX<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
     }));
     context.subscriptions.push(vscode.commands.registerCommand("get.wrapInGetBuilder", () => {
-        insertSnippet("GetBuilder<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(${2:repository: repository}),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
+        insertSnippet("GetBuilder<${1:My}Controller>(\n" + SpaceX() + "init: ${1:My}Controller(),\n" + SpaceX() + "initState: (_) {},\n" + SpaceX() + "builder: (_) {\n" + SpaceX() + SpaceX() + "return ", "\n  },\n" + "),", SpaceX(), false, false);
     }));
     context.subscriptions.push(vscode.commands.registerCommand("get.wrapInObx", () => {
         insertSnippet("Obx(() =>" + " ", "),", SpaceX(), true, true);
