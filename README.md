@@ -34,8 +34,10 @@ dependencies:
             - my_page.dart
             - my_controller.dart
             - my_binding.dart
-            - /local_widgets
-    - /global_widgets 
+            - /widgets
+              - reusable_module_widgets.dart
+    - /widgets 
+      - reusable_global_widget.dart
     - /routes
         - my_routes.dart
         - my_pages.dart
