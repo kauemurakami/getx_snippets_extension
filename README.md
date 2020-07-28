@@ -35,7 +35,7 @@ dependencies:
             - my_controller.dart
             - my_binding.dart
             - /widgets
-              - reusable_module_widgets.dart
+              - reusable_module_widget.dart
     - /widgets 
       - reusable_global_widget.dart
     - /routes
