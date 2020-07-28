@@ -52,7 +52,7 @@ examples available in this repository:
 ```
 [getx_pattern_site and getx_example](https://github.com/kauemurakami/getx_pattern/)
 
-## [Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
+### [Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
 
 ## Example
 [See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
