@@ -31,6 +31,13 @@ dependencies:
 **Proposed structure -> subsequent changes will not change the current structure**
 ```yaml
 - /app  
+    - /data
+        - /repository
+          - my_repository.dart
+        - /model
+          - my_model.dart
+        - /provider
+          - my_provider.dart
     - /modules
         - /my_module
             - my_page.dart
