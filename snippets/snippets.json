@@ -28,6 +28,17 @@
         ],
         "description": "Generate void GetController."
     },
+    "GetVoidService Snippet": {
+        "prefix": "getservice",
+        "body": [
+            "import 'package:get/get.dart';",
+            "",
+            "class ${1:My}Controller extends GetxService {",
+            "",
+            "}"
+        ],
+        "description": "Generate void GetController."
+    },
     "GetBindings Snippet": {
         "prefix": "getbinding",
         "body": [
@@ -37,7 +48,7 @@
             "class ${1:MyPage}Binding implements Bindings {",
             "@override",
             "void dependencies() {",
-            "\tGet.lazyPut<${2:MyPage}Controller>(() => LandingController(",
+            "\tGet.lazyPut<${2:MyPage}Controller>(() => {2:MyPage}Controller(",
             "\t\trepository: ${3:MyUser}Repository(",
             "\t\tapiClient: ${4:MyData}Provider(httpClient: http.Client()))));",
             "\t}",
