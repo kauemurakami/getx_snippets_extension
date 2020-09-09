@@ -128,7 +128,7 @@
             "import 'package:get/get.dart';",
             "import 'package:http/http.dart' as http;",
             "",
-            "class ${1:My}Page extends StatelessWidget {",
+            "class ${1:My}Page extends GetView<YourController> {",
             "",
             "\t@override",
             "\tWidget build(BuildContext context) {",
