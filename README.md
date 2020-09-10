@@ -312,25 +312,26 @@ wait for the snippet, set the variable and function name and you're done !
 
 
 ### More awesome Snippets
-getBinding
-getPut
-getFind
-getLazyPut
-getSnackbar
-getDefaultDialog
-getDialog
-getBottomSheet
-getonInit
-getonClose
-getToNamed
-getOffNamed
-getOffAllNamed
-getTo
-getOff
-getOffAll
-getStorage
-getStorageWrite
-getStorageRead
+getService
+getBinding  
+getPut  
+getFind  
+getLazyPut  
+getSnackbar  
+getDefaultDialog  
+getDialog  
+getBottomSheet  
+getonInit  
+getonClose  
+getToNamed  
+getOffNamed  
+getOffAllNamed  
+getTo  
+getOff  
+getOffAll  
+getStorage  
+getStorageWrite  
+getStorageRead  
 
 
 ## Releases Notes
