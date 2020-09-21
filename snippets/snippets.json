@@ -7,6 +7,9 @@
             "",
             "class ${1:My}Controller extends GetxController {",
             "",
+            "final ${2:My}Repository repository;",
+            "$1Controller({@required this.repository}) : assert(repository != null);",
+            "",
             "\tfinal _${3:obj} = ''.obs;",
             "\tset $3(value) => this._$3.value = value;",
             "\tget $3 => this._$3.value;",
@@ -24,6 +27,34 @@
             "}"
         ],
         "description": "Generate void GetController."
+    },
+    "GetVoidService Snippet": {
+        "prefix": "getservice",
+        "body": [
+            "import 'package:get/get.dart';",
+            "",
+            "class ${1:My}Controller extends GetxService {",
+            "",
+            "}"
+        ],
+        "description": "Generate void GetController."
+    },
+    "GetBindings Snippet": {
+        "prefix": "getbinding",
+        "body": [
+            "import 'package:get/get.dart';",
+            "import 'package:http/http.dart' as http;",
+            "",
+            "class ${1:MyPage}Binding implements Bindings {",
+            "@override",
+            "void dependencies() {",
+            "\tGet.lazyPut<${2:MyPage}Controller>(() => {2:MyPage}Controller(",
+            "\t\trepository: ${3:MyUser}Repository(",
+            "\t\tapiClient: ${4:MyData}Provider(httpClient: http.Client()))));",
+            "\t}",
+            "}"
+        ],
+        "description": "Generate a Binding class."
     },
     "GetTheme Snippet": {
         "prefix": "gettheme",
@@ -97,7 +128,7 @@
             "import 'package:get/get.dart';",
             "import 'package:http/http.dart' as http;",
             "",
-            "class ${1:My}Page extends StatelessWidget {",
+            "class ${1:My}Page extends GetView<YourController> {",
             "",
             "\t@override",
             "\tWidget build(BuildContext context) {",

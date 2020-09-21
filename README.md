@@ -1,6 +1,8 @@
 # getx-snippets
-[![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension)  
-![](images/icon_readme.png)
+[![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension) 
+<a href="https://www.buymeacoffee.com/kauemurakami" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+![](images/icon_readme.png) 
 
 Extension made for you, who also uses this powerful library and doesn't like to waste time.  
 To that extent, you find snippets of snippets of code, or even entire classes, generated with just a few keystrokes, 
@@ -27,43 +29,39 @@ dependencies:
 >When all files are created, just import all dependencies to resolve all errors.  
 
 **Proposed structure -> subsequent changes will not change the current structure**
-<pre>
-|-- lib
-  |-- app
-    |-- controller
-      |-- mycontrollerfolder
-        |-- my_controller.dart 
-    |-- data
-      |-- model
-        |-- my_model.dart
-      |-- repository
-        |-- my_repository.dart
-      |-- provider
-        |-- my_provider.dart
-    |-- ui
-      |-- android
-        |-- widgets
-          |-- custom_widgets_global.dart
-        |-- mypagefolder
-          |-- widgets
-            |-- custom_widget_in_my_page.dart
-          |-- my_page.dart
-      |-- ios
-      |-- theme
-        |-- my_theme.dart
-    |-- routes
-      |-- app_routes.dart
-      |-- app_pages.dart
-    |-- bindings
-      |-- My_binding.dart
-    |-- translations
-      |-- pt_br.dart
-        |-- pt_br_strings_consts.dart
-        |-- pt_br_translation_map.dart
-  |-- main.dart
-</pre>
+```yaml
+- /app  
+    - /data
+        - /repository
+          - my_repository.dart
+        - /model
+          - my_model.dart
+        - /provider
+          - my_provider.dart
+    - /modules
+        - /my_module
+            - my_page.dart
+            - my_controller.dart
+            - my_binding.dart
+            - /widgets
+              - reusable_module_widget.dart
+    - /widgets 
+      - reusable_global_widget.dart
+    - /routes
+        - my_routes.dart
+        - my_pages.dart
+    - /theme
+        - text_theme.dart  
+        - color_theme.dart  
+        - app_theme.dart  
+- main.dart  
+# proposed by william Silva 
 
-[Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
+examples available in this repository:  
+```
+[getx_pattern_site and getx_example](https://github.com/kauemurakami/getx_pattern/)
+
+### [Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
 
 ## Example
 [See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
@@ -314,24 +312,26 @@ wait for the snippet, set the variable and function name and you're done !
 
 
 ### More awesome Snippets
-getPut
-getFind
-getLazyPut
-getSnackbar
-getDefaultDialog
-getDialog
-getBottomSheet
-getonInit
-getonClose
-getToNamed
-getOffNamed
-getOffAllNamed
-getTo
-getOff
-getOffAll
-getStorage
-getStorageWrite
-getStorageRead
+getService
+getBinding  
+getPut  
+getFind  
+getLazyPut  
+getSnackbar  
+getDefaultDialog  
+getDialog  
+getBottomSheet  
+getonInit  
+getonClose  
+getToNamed  
+getOffNamed  
+getOffAllNamed  
+getTo  
+getOff  
+getOffAll  
+getStorage  
+getStorageWrite  
+getStorageRead  
 
 
 ## Releases Notes
