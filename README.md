@@ -64,7 +64,7 @@ examples available in this repository:
 ### [Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
 
 ## Example
-[See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
+[See complet exemple](https://github.com/kauemurakami/getx_snippets_extension/tree/master/examples)  
 not yet available
 ## Features
 - [Classes](#classes)  
@@ -75,11 +75,10 @@ not yet available
   Here you will find snippets that will help you create widgets quickly and easily.  
 - [Widgets Component](#widgets-components)  
   Here you will find reusable widgets, made in a stateless widgets ready to be consumed by several widgets.  
-- ### Now you can use Wrap with our extension, this makes it easy when you need to change a complex widget tree without headaches, see the available Wrappers  
-- Wrap in GetX (alt + x)  
-- Wrap in Obx (alt + o)  
-- Wrap in GetBuilder (alt + g)  
-Using : Select your widget and click in lamp or use the shortcut.
+
+## Wrap
+![](examples/wraps.jpg)
+
 
 ## Classes
 ### getmain
@@ -333,47 +332,6 @@ getStorage
 getStorageWrite  
 getStorageRead  
 
-
-## Releases Notes
-
-### 3.1.0
-
-WELCOME GETX 3.3 !!!  
-
-getx-snippets release 2.5  
-:octopus: New Features :octopus:  
-
-Wrap avaibles:
-
-Wrap in GetX (alt + x)
-Wrap in Obx (alt + o)
-Wrap in GetBuilder (alt + g)
-
-Using : Select your widget and click in lamp or use the shortcut.
-
-New Snippets:
-
-getPut
-getFind
-getLazyPut
-getSnackbar
-getDefaultDialog
-getDialog
-getBottomSheet
-getonInit
-getonClose
-getToNamed
-getOffNamed
-getOffAllNamed
-getTo
-getOff
-getOffAll
-getStorage
-getStorageWrite
-getStorageRead
-
-
 **Enjoy!**
 
 -----------------------------------------------------------------------------------------------------------
-
