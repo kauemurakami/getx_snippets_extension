@@ -2,7 +2,7 @@
 	"name": "get-snippets",
 	"displayName": "GetX Snippets",
 	"description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
-	"version": "3.1.3",
+	"version": "3.1.5",
 	"publisher": "get-snippets",
 	"engines": {
 		"vscode": "^1.2.0"
@@ -63,19 +63,19 @@
 		],
 		"keybindings": [
 			{
-				"command": "get.wrapInGetx",
+				"command": "get.removeKey",
 				"key": "alt+x",
 				"mac": "alt+x",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "get.wrapInGetBuilder",
+				"command": "get.removeKey",
 				"key": "alt+g",
 				"mac": "alt+g",
 				"when": "editorTextFocus"
 			},
 			{
-				"command": "get.wrapInObx",
+				"command": "get.removeKey",
 				"key": "alt+o",
 				"mac": "alt+o",
 				"when": "editorTextFocus"
