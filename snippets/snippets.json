@@ -48,9 +48,9 @@
             "class ${1:MyPage}Binding implements Bindings {",
             "@override",
             "void dependencies() {",
-            "\tGet.lazyPut<${2:MyPage}Controller>(() => $2Controller(",
-            "\t\trepository: ${3:MyUser}Repository(",
-            "\t\tapiClient: ${4:MyData}Provider(httpClient: http.Client()))));",
+            "\tGet.lazyPut< $1Controller>(() => $1Controller(",
+            "\t\trepository: ${2:MyUser}Repository(",
+            "\t\tapiClient: ${3:MyData}Provider(httpClient: http.Client()))));",
             "\t}",
             "}"
         ],
