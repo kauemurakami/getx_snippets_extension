@@ -313,6 +313,7 @@ wait for the snippet, set the variable and function name and you're done !
 ### More awesome Snippets
 getService
 getBinding  
+getSplashPage
 getPut  
 getFind  
 getLazyPut  

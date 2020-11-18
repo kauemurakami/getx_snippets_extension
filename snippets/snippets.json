@@ -537,7 +537,7 @@
             "",
             "RaisedButton(",
             "\tcolor: ${1:Colors.blue},",
-            "\tonPressed: ()=> _.${2:function},",
+            "\tonPressed: ()=> _.${2:function()},",
             "\tsplashColor: ${3:Colors.blueGrey},",
             "\tchild: Text('${4:OK}',",
             "\t\tstyle: TextStyle(",
@@ -859,6 +859,55 @@
             "  onConfirm: () => print(\"Ok\"),",
             "  middleText: \"${1:Dialog made in 3 lines of code}\"",
             ");"
+        ],
+        "description": "Get defaultDialog"
+    },
+    "Get Splash Page": {
+        "prefix": "getsplashpage",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:get/get.dart';",
+
+            "class SplashPage extends StatefulWidget {",
+
+            "@override",
+            "_SplashPageState createState() => _SplashPageState();",
+            "}",
+            "class _SplashPageState extends State<SplashPage> {",
+              "@override",
+              "void initState() {",
+              "super.initState();",
+              "Future.delayed(Duration(seconds: 2), () => Get.toNamed('login'));",
+            "}",
+
+            "@override",
+            "Widget build(BuildContext context) {",
+              "return Container(",
+                "color: Colors.white,",
+                "child: Column(children: <Widget>[",
+                  "Padding(",
+                    "padding: EdgeInsets.only(top: 200, bottom: 10),",
+                    "child: Container(",
+                      "height: 200,",
+                      "width: 200,",
+                      "/*decoration: BoxDecoration(",
+                          "image: DecorationImage(",
+                              "image: AssetImage('images/img_splash.png'),",
+                              "fit: BoxFit.fill)),*/",
+                    "),",
+                  "),",
+                  "Text(",
+                    "'CONNECT',",
+                    "style: TextStyle(",
+                        "color: Colors.greenAccent,",
+                        "fontSize: 20,",
+                        "decoration: TextDecoration.none),",
+                  "),",
+                "]),",
+              ");",
+            "}",
+          "}"
+
         ],
         "description": "Get defaultDialog"
     }
