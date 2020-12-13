@@ -1,12 +1,14 @@
 # getx-snippets
-[![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension)  
-![](images/icon_readme.png)
+[![Star on GitHub](https://img.shields.io/github/stars/kauemurakami/get_snippets_extension.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/kauemurakami/get_snippets_extension) 
+<a href="https://www.buymeacoffee.com/kauemurakami" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+![](images/icon_readme.png) 
 
 Extension made for you, who also uses this powerful library and doesn't like to waste time.  
 To that extent, you find snippets of snippets of code, or even entire classes, generated with just a few keystrokes, 
 it's quick and easy.  
 We came to make your development with [Get](https://pub.dev/packages/get) easy !!!    
-So get out front and start using, it's just 21 snippets, with fully intuitive prefixes, so you don't forget :D  
+So get out front and start using, it's just 35 snippets, with fully intuitive prefixes, so you don't forget :D  
 > The extension was made so that we can start a complete functional project without any necessary changes.
 
 #### download extension on [MarketPlace](https://marketplace.visualstudio.com/items?itemName=get-snippets.get-snippets)
@@ -17,7 +19,7 @@ vscode ^1.43.0
 dependencies:
   flutter:
     sdk: flutter
-  get: ^2.12.1
+  get: ^3.2.0 ou >
   meta: ^1.1.8
   http: ^0.12.1 or dio: 3.x
 ```
@@ -27,37 +29,42 @@ dependencies:
 >When all files are created, just import all dependencies to resolve all errors.  
 
 **Proposed structure -> subsequent changes will not change the current structure**
-<pre>
-|-- lib
-  |-- src
-    |-- controller
-      |-- mycontrollerfolder
-        |-- my_controller.dart 
-    |-- data
-      |-- model
-        |-- my_model.dart
-      |-- repository
-        |-- my_repository.dart
-      |-- provider
-        |-- my_provider.dart
-    |-- ui
-      |-- android
-        |-- widgets
-          |-- custom_widgets_global.dart
-        |-- mypagefolder
-          |-- widgets
-            |-- custom_widget_in_my_page.dart
-          |-- my_page.dart
-      |-- ios
-      |-- theme
-        |-- my_theme.dart
-    |-- routes
-      |-- my_routes.dart
-  |-- main.dart
-</pre>
+```yaml
+- /app  
+    - /data
+        - /repository
+          - my_repository.dart
+        - /model
+          - my_model.dart
+        - /provider
+          - my_provider.dart
+    - /modules
+        - /my_module
+            - my_page.dart
+            - my_controller.dart
+            - my_binding.dart
+            - /widgets
+              - reusable_module_widget.dart
+    - /widgets 
+      - reusable_global_widget.dart
+    - /routes
+        - my_routes.dart
+        - my_pages.dart
+    - /theme
+        - text_theme.dart  
+        - color_theme.dart  
+        - app_theme.dart  
+- main.dart  
+# proposed by william Silva 
+
+examples available in this repository:  
+```
+[getx_pattern_site and getx_example](https://github.com/kauemurakami/getx_pattern/)
+
+### [Understand more about this structure and much more in our proposed pattern](https://kauemurakami.github.io/getx_pattern/)
 
 ## Example
-[See complet exemple](https://github.com/kauemurakami/get_snippets_extension/tree/doc/examples)  
+[See complet exemple](https://github.com/kauemurakami/getx_snippets_extension/tree/master/examples)  
 not yet available
 ## Features
 - [Classes](#classes)  
@@ -68,6 +75,10 @@ not yet available
   Here you will find snippets that will help you create widgets quickly and easily.  
 - [Widgets Component](#widgets-components)  
   Here you will find reusable widgets, made in a stateless widgets ready to be consumed by several widgets.  
+
+## Wrap
+![](examples/wraps.jpg)
+
 
 ## Classes
 ### getmain
@@ -86,6 +97,14 @@ Wait for the snippet, name your class and you're done
 
 ![](examples/getmodel.gif)
 
+### getrxmodel
+Create classes observable along with a dart class for your objects quickly and easily.    
+**getrxmodel** snippet a complete model will return, with the functions fromJson and toJson.   
+**Using:** In an empty file, start writing **getrxmodel**,  
+Wait for the snippet, name your class and you're done
+
+![](examples/getrxmodel.gif)
+
 ### getpage
 Quickly create, Stateless classes with widget and reactive features provided by [Get](https://pub.dev/packages/get), GetX,  
 **getpage** snippet, will bring you a complete stateless class, you only need to indicate:  
@@ -100,21 +119,39 @@ wait for the snippet, define the necessary data and ready!!
 
 ![](examples/getpage.gif)
 
-### getroutepages
+### getpagesroutes
 Quickly create, a class to manage your Routes with [Get](https://pub.dev/packages/get)  
 **getroutepages** snippet, will bring you a complete Route class, you just need to add more routes.  
-**Using:** When creating a file ***my_routes.dart*** empty, you can start by writing **getroutepages**,  
-wait for the snippet and that's it !
+**Using:** When creating a file ***app_pages.dart*** empty, you can start by writing **getpagesroutes**,  
+wait for the snippet and that's it !  
+We decided to separate your routes from their ** getpage ** functions through a ** part and part of ** so that your file is smaller and can make it easier to refactor your project, changing your routepage only in its ** app_routes file constant. dart **
 
-![](examples/getroutepages.gif)
+![](examples/getpagesroutes.gif)
 
-### getroutepage
+### getpageroute
 Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
-**getroutepage** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
-**Using:** Inside the file ***my_routes.dart***, in our class created with *getroutes*, you can start by writing **getroutepage**,  
+**getpageroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
+**Using:** Inside the file ***app_pages.dart***, in our class created with *getpagesroutes*, you can start by writing **getpageroute** for adding new route page !  
 wait for the snippet and that's it !
 
-![](examples/getroutepage.gif)
+![](examples/getpageroute.gif)
+
+### getroutes
+Now that you have our App Pages class in our **app_pages.dart** file, let's create a new file at the same level, within the routes folder.  
+Give it the name **app_routes**, it will only be responsible for saving your routes in constants, this will facilitate the **location** of your routes and you can exchange all the flames of a **single** route just by changing the value of your constant for that. So come on.  
+with the **app_routes.dart** file created, start typing **getroutes**.  
+This will return us a small abstract class with its constants and some example routes :D 
+
+![](examples/getroutes.gif)
+
+### getroute
+Now that you have the routes class, easily add another route with navigation [Get](https://pub.dev/packages/get)  
+**getroute** snippet, will bring you complete route, you will only define the url and your page in an easy way.  
+**Using:** Inside the file ***app_routes.dart***, in our class created with *getroutes*, you can start by writing **getroute**,  
+wait for the snippet and that's it !
+
+![](examples/getroute.gif)
+
 
 ### getcontroller
 Quickly create Controller classes with RxController from [Get](https://pub.dev/packages/get).  
@@ -154,27 +191,27 @@ Start typing gettheme, wait for the snippet and go!
 
 
 ## Functions and variables
-### getfinal
+### getfinal and getfinal_
 Quickly create variables **final observável** for [Get](https://pub.dev/packages/get).  
 **getfinal** snippet, will bring you an observable final variable and its methods **get** and **set**.  
 **Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getfinal**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, choice between private or not, set the variable name and you're done !
 
 ![](examples/getfinal.gif)
 
-### getset
+### getset and getset_
 Quickly create a function **set** for an observable [Get](https://pub.dev/packages/get).  
 **getset** snippet, will bring you a function to assign a value in your observable.  
 **Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getset**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, choice between private or not, set the variable name and you're done !
 
 ![](examples/getset.gif)
 
-### getget
+### getget and getget_
 Quickly create a function **get** para um observável [Get](https://pub.dev/packages/get).  
 **getget** snippet, will bring you a function to recover the value of your observable.  
 **Using:** In any file that has the package [Get](https://pub.dev/packages/get), just start writing **getget**,  
-wait for the snippet, set the variable name and you're done !
+wait for the snippet, choice between private or not ,set the variable name and you're done !
 
 ![](examples/getget.gif)
 
@@ -182,6 +219,12 @@ wait for the snippet, set the variable name and you're done !
 Quickly instantiate your custom widgets.    
 **getwidget** It only serves for you to retrieve a custom widget in a practical way.  
 **Using:** In any file that has the material, just start writing **getwidget**,  
+wait for the snippet, set the widget name and you're done !
+
+### getx
+A simple getx Widget with shortcuts for controller name will return**getx**.  
+It only serves for you to retrieve a custom widget in a practical way.  
+**Using:** In any file that has the material, just start writing **getx**,  
 wait for the snippet, set the widget name and you're done !
 
 ### getargs
@@ -267,45 +310,29 @@ wait for the snippet, set the variable and function name and you're done !
 ![](examples/getbuttonwidget.gif)
 
 
-## Releases Notes
-### 2.5.0
-
-WELCOME GETX 3.0 !!!  
-
-getx-snippets release 2.5  
-:octopus: New Features :octopus:  
-Thinking to further facilitate your development process, we created complete reusable components, some of which were already added in this release, others will come with more news in 3.0  
-
-### 2.0.0
-get-snippets release 2.  
-:octopus: New Features :octopus:  
-You can now create dynamic lists. With the getlist snippet we will treat you:  
-- GetX widget with optional attributes and its mandatory builder function  
-- A configured ListView.separated  
-- A ListTile to simulate your list  
-You can now create dynamic lists with dismissibles already configured for you. As? with the command getxlistdismissible, of cours.   you don't need to write the whole name, this is for your best fixation, just to be intuitive, just start writing and wait for the snippet.  
-- GetX widget with optional attributes and its mandatory builder function  
-- A configured ListView.separated  
-- A Dismissible Widget that allows you to perform actions by dragging items from the list TO BOTH SIDES, fully configured, just choose what to do with it !!!  
-- A ListTile to simulate your list  
-
-- Generation of Provider class Dio and http   
-Start using and enjoy !!!
-
-### 1.0.0
-get-snippets initial release.
-snippets para:  
-- Generetion of Model class 
-- Generation of Repository class  
-- Generation of Controller class  
-- Generation of Main class (**main**)  
-- Generation of Provider class  
-- Creating variables **.obs** together with their respective **get** e **set**  
-- Generation of **um** get **ou um** set  
-- Generation of class Routes and individual routes
-
+### More awesome Snippets
+getService
+getBinding  
+getSplashPage
+getPut  
+getFind  
+getLazyPut  
+getSnackbar  
+getDefaultDialog  
+getDialog  
+getBottomSheet  
+getonInit  
+getonClose  
+getToNamed  
+getOffNamed  
+getOffAllNamed  
+getTo  
+getOff  
+getOffAll  
+getStorage  
+getStorageWrite  
+getStorageRead  
 
 **Enjoy!**
 
 -----------------------------------------------------------------------------------------------------------
-
