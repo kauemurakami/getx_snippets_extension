@@ -32,6 +32,8 @@ dependencies:
 ```yaml
 - /app  
     - /data
+        - /services
+          - my_service.dart
         - /repository
           - my_repository.dart
         - /model
@@ -45,7 +47,7 @@ dependencies:
             - my_binding.dart
             - /widgets
               - reusable_module_widget.dart
-    - /widgets 
+    - /global_widgets 
       - reusable_global_widget.dart
     - /routes
         - my_routes.dart
@@ -54,6 +56,10 @@ dependencies:
         - text_theme.dart  
         - color_theme.dart  
         - app_theme.dart  
+    - /utils
+      - /values
+        - /strings
+      - /keys
 - main.dart  
 # proposed by william Silva 
 
@@ -311,6 +317,7 @@ wait for the snippet, set the variable and function name and you're done !
 
 
 ### More awesome Snippets
+getsplash
 getService
 getBinding  
 getSplashPage
@@ -332,6 +339,23 @@ getOffAll
 getStorage  
 getStorageWrite  
 getStorageRead  
+getfirebaseInstance
+getfirebaseAuthState
+getfirebaseLoginAnonymous
+getfirebaseRegistrationEmailAndPassword
+getfirebaseLoginEmailAndPassword
+getfirebaseVerifyExistsEmail
+getfirebaseSendEmailVerification
+getfirebaseEmailVerification
+getfirebaseSignOut
+getfirebaseCurrentUser
+getfirebaseDeleteUser
+getfirebaseReauthenticateUser
+getfirebaseLoginSocialGoogle
+getfirebaseLoginSocialFacebook
+getfirebaseLoginSocialApple
+getfirebaseLoginSocialTwitter
+getfirebaseLoginSocialGithub
 
 **Enjoy!**
 

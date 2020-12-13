@@ -1,4 +1,322 @@
 {
+
+    "GetFirebaseLoginSocialGoogle Snippet": {
+        "prefix": "getfirebaseLoginSocialGoogle",
+        "body": [
+            "//google_sign_in: ^4.5.1 ",
+
+            "Future<UserCredential> signInWithGoogle() async {",
+            "\t// Trigger the authentication flow",
+            "\tfinal GoogleSignInAccount googleUser = await GoogleSignIn().signIn();",
+            "",
+            "\t// Obtain the auth details from the request",
+            "\tfinal GoogleSignInAuthentication googleAuth = await googleUser.authentication;",
+            "",
+            "\t// Create a new credential",
+            "\tfinal GoogleAuthCredential credential = GoogleAuthProvider.credential(",
+                "\t\taccessToken: googleAuth.accessToken,",
+                "\t\tidToken: googleAuth.idToken,",
+            "\t);",
+            "\t// Once signed in, return the UserCredential",
+            "\treturn await FirebaseAuth.instance.signInWithCredential(credential);",
+            "}"
+        ],
+        "description": "Once installed, trigger the sign-in flow and create a new credential:"
+    },
+
+    "GetFirebaseLoginSocialFacebook Snippet": {
+        "prefix": "getfirebaseLoginSocialFacebook",
+        "body": [
+            "//flutter_facebook_auth: ^1.0.0",
+            "",
+            "Future<UserCredential> signInWithFacebook() async {",
+            "\t// Trigger the sign-in flow",
+            "\tfinal LoginResult result = await FacebookAuth.instance.login();",
+            "",
+            "\t// Create a credential from the access token",
+            "\tfinal FacebookAuthCredential facebookAuthCredential = FacebookAuthProvider.credential(result.accessToken.token);",
+            "",
+            "\t// Once signed in, return the UserCredential",
+            "\treturn await FirebaseAuth.instance.signInWithCredential(facebookAuthCredential);",
+            "}"
+        ],
+        "description": "Before getting started setup your Facebook Developer App and follow the setup process to enable Facebook Login.Ensure the Facebook sign-in provider is enabled on the Firebase Console. with the Facebook App ID and Secret set."
+    },
+
+    "GetFirebaseLoginSocialApple Snippet": {
+        "prefix": "getfirebaseLoginSocialApple",
+        "body": [
+            "//sign_in_with_apple: ^2.5.2",
+            "//crypto: ^2.1.5",
+            "/// Generates a cryptographically secure random nonce, to be included in a",
+            "/// credential request.",
+            "String generateNonce([int length = 32]) {",
+            "\tfinal charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._';",
+            "\tfinal random = Random.secure();",
+            "\treturn List.generate(length, (_) => charset[random.nextInt(charset.length)])",
+            ".join();",
+            "}",
+            "/// Returns the sha256 hash of [input] in hex notation.",
+            "String sha256ofString(String input) {",
+            "\tfinal bytes = utf8.encode(input);",
+            "\tfinal digest = sha256.convert(bytes);",
+            "\treturn digest.toString();",
+            "}",
+            "",
+            "Future<UserCredential> signInWithApple() async {",
+            "\t// To prevent replay attacks with the credential returned from Apple, we",
+            "\t// include a nonce in the credential request. When signing in in with",
+            "\t// Firebase, the nonce in the id token returned by Apple, is expected to",
+            "\t// match the sha256 hash of `rawNonce`.",
+            "\tfinal rawNonce = generateNonce();",
+            "\tfinal nonce = sha256ofString(rawNonce);",
+            "",
+            "\t// Request credential for the currently signed in Apple account.",
+            "\tfinal appleCredential = await SignInWithApple.getAppleIDCredential(",
+            "\tscopes: [",
+            "\t\tAppleIDAuthorizationScopes.email,",
+            "\t\tAppleIDAuthorizationScopes.fullName,",
+            "\t],",
+            "\tnonce: nonce,",
+            "\t);",
+            "",
+            "\t// Create an `OAuthCredential` from the credential returned by Apple.",
+            "\tfinal oauthCredential = OAuthProvider('apple.com').credential(",
+            "\t\tidToken: appleCredential.identityToken,",
+            "\t\trawNonce: rawNonce,",
+            "\t);",
+            "",
+            "\t// Sign in the user with Firebase. If the nonce we generated earlier does",
+            "\t// not match the nonce in `appleCredential.identityToken`, sign in will fail.",
+            "\treturn await FirebaseAuth.instance.signInWithCredential(oauthCredential);",
+            "}"
+        ],
+        "description": "Before you begin configure Sign In with Apple and enable Apple as a sign-in provider. Next, make sure that your Runner apps have the 'Sign in with Apple' capability.Install the sign_in_with_apple plugin, as well as the crypto package:"
+    },
+    "GetFirebaseLoginSocialTwitter Snippet": {
+        "prefix": "getfirebaseLoginSocialTwitter",
+        "body": [
+            "//flutter_twitter_login: ^1.1.0",
+            "Future<UserCredential> signInWithTwitter() async {",
+            "\t// Create a TwitterLogin instance",
+            "\tfinal TwitterLogin twitterLogin = new TwitterLogin(",
+            "\t\tconsumerKey: '<your consumer key>',",
+            "\t\tconsumerSecret:' <your consumer secret>',",
+            "\t);",
+            "",
+            "\t// Trigger the sign-in flow",
+            "\tfinal TwitterLoginResult loginResult = await twitterLogin.authorize();",
+            "",
+            "\t// Get the Logged In session",
+            "\tfinal TwitterSession twitterSession = loginResult.session;",
+            "",
+            "\t// Create a credential from the access token",
+            "\tfinal AuthCredential twitterAuthCredential = TwitterAuthProvider.credential(accessToken: twitterSession.token, secret: twitterSession.secret);",
+            "",
+            "\t// Once signed in, return the UserCredential",
+            "\treturn await FirebaseAuth.instance.signInWithCredential(twitterAuthCredential);",
+            "}"
+        ],
+        "description": "Ensure the 'Twitter' sign-in provider is enabled on the Firebase Console with an API Key and API Secret set."
+    },
+    "GetFirebaseLoginSocialGithub Snippet": {
+        "prefix": "getfirebaseLoginSocialGithub",
+        "body": [
+            "//  github_sign_in: ^0.0.1",
+            "Future<UserCredential> signInWithGitHub() async {",
+            "\t// Create a GitHubSignIn instance",
+            "\tfinal GitHubSignIn gitHubSignIn = GitHubSignIn(",
+            "\t\tclientId: clientId,",
+            "\t\tclientSecret: clientSecret,",
+            "\t\tredirectUrl: 'https://my-project.firebaseapp.com/__/auth/handler');",
+            "",
+            "\t// Trigger the sign-in flow",
+            "\tfinal result = await gitHubSignIn.signIn(context);",
+            "",
+            "\t// Create a credential from the access token",
+            "\tfinal AuthCredential githubAuthCredential = GithubAuthProvider.credential(result.token);",
+            "",
+            "\t// Once signed in, return the UserCredential",
+            "\treturn await FirebaseAuth.instance.signInWithCredential(githubAuthCredential);",
+            "}"
+        ],
+        "description": "Ensure that you have setup an OAuth App from your GitHub Developer Settings and that the 'GitHub' sign-in provider is enabled on the Firebase Console with the Client ID and Secret are set, with the callback URL set in the GitHub app."
+    },
+    "GetFirebaseRegistrationEmailAndPassword Snippet": {
+        "prefix": "getfirebaseRegistrationEmailAndPassword",
+        "body": [
+            "try {",
+            "\tUserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(",
+            "\t\temail: 'barry.allen@example.com',",
+            "\t\tpassword: 'SuperSecretPassword!'",
+            "\t);",
+            "} on FirebaseAuthException catch (e) {",
+            "\tif (e.code == 'weak-password') {",
+            "\tprint('The password provided is too weak.');",
+            "\t} else if (e.code == 'email-already-in-use') {",
+            "\tprint('The account already exists for that email.');",
+            "\t}",
+            "} catch (e) {",
+            "\tprint(e);",
+            "}"
+        ],
+        "description": "To create a new account on your Firebase project call the createUserWithEmailAndPassword() method with the user's email address and password:"
+    },
+
+    "GetFirebaseLoginEmailAndPassword Snippet": {
+        "prefix": "getfirebaseLoginEmailAndPassword",
+        "body": [
+            "try {",
+            "\tUserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(",
+            "\t\temail: 'barry.allen@example.com',",
+            "\t\tpassword: 'SuperSecretPassword!'",
+            "\t);",
+            "} on FirebaseAuthException catch (e) {",
+            "\tif (e.code == 'user-not-found') {",
+            "\tprint('No user found for that email.');",
+            "\t} else if (e.code == 'wrong-password') {",
+            "\tprint('Wrong password provided for that user.');",
+            "\t}",
+            "}"
+        ],
+        "description": "To sign-in to an existing account, call the signInWithEmailAndPassword() method:"
+    },
+    "GetFirebaseVerifyExistsEmail Snippet": {
+        "prefix": "getfirebaseVerifyExistsEmail",
+        "body": [
+            "User user = FirebaseAuth.instance.currentUser;",
+            "if (!user.emailVerified) {",
+            "\tawait user.sendEmailVerification();",
+            "}"
+        ],
+        "description": "The User class provides a sendEmailVerification() method and emailVerified property which you can use to handle this scenario."
+    },
+
+    "GetFirebaseDeleteUser Snippet": {
+        "prefix": "getfirebaseDeleteUser",
+        "body": [
+            "try {",
+            "\tawait FirebaseAuth.instance.currentUser.delete();",
+            "} catch on FirebaseAuthException (e) {",
+            "\tif (e.code == 'requires-recent-login') {",
+            "\tprint('The user must reauthenticate before this operation can be executed.');",
+            "\t}",
+            "}"
+        ],
+        "description": "If your user wishes to delete their account from your project, this can be archived with the delete() method. Since this is a security-sensitive operation, it requires that user must have recently signed-in"
+    },
+
+    "GetFirebaseCurrentUser Snippet": {
+        "prefix": "getfirebaseCurrentUser",
+        "body": [
+            "FirebaseAuth auth = FirebaseAuth.instance;",
+            "if (auth.currentUser != null) {",
+            "\tprint(auth.currentUser.uid);",
+            "}"
+        ],
+        "description": "To sign a user out, call the signOut() method, if you are listening to changes in authentication state, a new event will be sent to your listeners."
+    },
+
+    "GetFirebaseReauthenticateUser Snippet": {
+        "prefix": "getfirebaseReauthenticateUser",
+        "body": [
+            "String email = 'barry.allen@example.com';",
+            "String password = 'SuperSecretPassword!';",            
+            "//Create a credential",
+            "EmailAuthCredential credential = EmailAuthProvider.credential(email: email, password: password);",
+            "//Reauthenticate",
+            "await FirebaseAuth.instance.currentUser.reauthenticateWithCredential(credential);"
+        ],
+        "description": " Rather than signing the user out and back in again, the reauthenticateWithCredential() method can be called. If a recent login is required, create a new AuthCredential and pass it to the method. For example, to reauthenticate with email & password, create a new EmailAuthCredential:"
+    },
+    "GetFirebaseInstance Snippet": {
+        "prefix": "getfirebaseInstance",
+        "body": [
+            "FirebaseAuth auth = FirebaseAuth.instance;"
+        ],
+        "description": "To create a new Firebase Auth instance, call the instance getter on FirebaseAuth:"
+    },
+    "GetFirebaseSignOut Snippet": {
+        "prefix": "getfirebaseSignOut",
+        "body": [
+            "await FirebaseAuth.instance.signOut();"
+        ],
+        "description": "To sign a user out, call the signOut() method, if you are listening to changes in authentication state, a new event will be sent to your listeners."
+    },
+
+    "GetFirebaseAnonymousLogin Snippet": {
+        "prefix": "getfirebaseLoginAnonymous",
+        "body": [
+            "UserCredential userCredential = await FirebaseAuth.instance.signInAnonymously();"
+        ],
+        "description": "To get started, call the signInAnonymously() method on the FirebaseAuth instance"
+    },
+    "GetFirebaseAuthState Snippet": {
+        "prefix": "getfirebaseAuthState",
+        "body": [
+            
+            "FirebaseAuth.instance",
+            ".authStateChanges()",
+            ".listen((User user) { ",
+            "if ( user == null ) {",
+            "\tprint ( 'User is currently signed out!' ) ;",
+            "} else {",
+            "\tprint ( ''User is signed in!' ) ;",
+            "\t}",
+            "});"
+        ],
+        "description": "To subscribe to these changes, call the authStateChanges() method on your FirebaseAuth instance"
+    },
+
+    "GetFirebaseSendEmailVerification Snippet": {
+        "prefix": "getfirebaseSendEmailVerification",
+        "body": [
+            "User user = FirebaseAuth.instance.currentUser;",
+            "if (!user.emailVerified) {",
+            "\tvar actionCodeSettings = ActionCodeSettings(",
+            "\turl: 'https://www.example.com/?email=${user.email}',",
+            "\tdynamicLinkDomain: 'example.page.link',",
+            "\tandroid: {",
+            "\t'packageName': 'com.example.android',",
+            "\t'installApp': true,",
+            "\t'minimumVersion': '12'",
+            "},",
+            "\tiOS: {'bundleId': 'com.example.ios'},",
+            "\thandleCodeInApp: true);",
+            "\tawait user.sendEmailVerification(actionCodeSettings);",
+            "}"
+        ],
+        "description": "You can pass state via a continue URL when sending email actions for verifying a user's email.This provides the user the ability to go back to the app after the action is completed. In addition, you can specify whether to handle the email action link directly from a mobile application when it is installed instead of a web page."
+    },
+
+    "GetFirebaseEmailVerification Snippet": {
+        "prefix": "getfirebaseEmailVerification",
+        "body": [
+            "FirebaseAuth auth = FirebaseAuth.instance;",
+
+            "//Get actionCode from the dynamicLink",
+            "final Uri deepLink = dynamicLink?.link;",
+            "var actionCode = deepLink.queryParameters['oobCode'];",
+            "",
+            "try {",
+            "\tawait auth.checkActionCode(actionCode);",
+            "\tawait auth.applyActionCode(actionCode);",
+            "",
+            "\t// If successful, reload the user:",
+            "\tauth.currentUser.reload();",
+            "} on FirebaseAuthException catch (e) {",
+            "\tif (e.code == 'invalid-action-code') {",
+            "\tprint('The code is invalid.');",
+            "\t}",
+            "}"
+        ],
+        "description": "The code then can be received in app by parsing the Firebase Dynamic Link. Refer - Handling email actions in a mobile application to know how to handle the link in app. You can use firebase_dynamic_links flutter package to get the oobCode from the link and apply actionCode as follow."
+    },
+
+
+
+
+
     "GetController Snippet": {
         "prefix": "getcontroller",
         "body": [
@@ -126,7 +444,7 @@
         "body": [
             "import 'package:flutter/material.dart';",
             "import 'package:get/get.dart';",
-            "import 'package:http/http.dart' as http;",
+            
             "",
             "class ${1:My}Page extends GetView<$1Controller> {",
             "",
