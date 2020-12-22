@@ -425,6 +425,34 @@
         ],
         "description": "Generate file routes."
     },
+    "GetValueBuilder Snippet": {
+        "prefix": "getvaluebuilder",
+        "body": [
+            "ValueBuilder<bool>(",
+            "\tinitialValue: false,",
+            "\tbuilder: (value, updateFn) => Switch(",
+            "\t\tvalue: value,",
+            "\t\tonChanged: updateFn, // same signature! you could use ( newValue ) => updateFn( newValue )",
+            "\t),",
+            "// if you need to call something outside the builder method.",
+            "\tonUpdate: (value) => print('Value updated: $value'),",
+            "\tonDispose: () => print('Widget unmounted'),",
+            "),"
+        ],
+        "description": "Generate ValueBuilder."
+    },
+    "GetObxValue Snippet": {
+        "prefix": "getobxvalue",
+        "body": [
+        "ObxValue((data) => Switch(",
+        "\tvalue: data.value,",
+        "onChanged: data, // Rx has a _callable_ function! You could use (flag) => data.value = flag,",
+        "\t),",
+        "\tfalse.obs,",
+        "),"
+        ],
+        "description": "Generate ValueBuilder."
+    },
     "GetRoute Snippet": {
         "prefix": "getroute",
         "body": [

@@ -53,12 +53,12 @@ dependencies:
         - my_routes.dart
         - my_pages.dart
     - /theme
-        - text_theme.dart  
-        - color_theme.dart  
+        - text_theme.dart   
         - app_theme.dart  
     - /utils
       - /values
         - /strings
+        - /colors
       - /keys
 - main.dart  
 # proposed by william Silva 
@@ -318,6 +318,8 @@ wait for the snippet, set the variable and function name and you're done !
 
 ### More awesome Snippets
 getsplash
+getobxvalue
+getvaluebuilder
 getService
 getBinding  
 getSplashPage
