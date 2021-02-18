@@ -571,7 +571,7 @@
             "\tint id;",
             "\tString name;",
             "",
-            "\t$1Model({ id, name });",
+            "\t$1Model({ this.id, this.name });",
             "",
             "\t$1Model.fromJson(Map<String, dynamic> json){",
             "\t\t\tthis.id = json['id'];",
