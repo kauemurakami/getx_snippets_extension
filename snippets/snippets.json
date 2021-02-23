@@ -367,8 +367,7 @@
             "@override",
             "void dependencies() {",
             "\tGet.lazyPut< $1Controller>(() => $1Controller(",
-            "\t\trepository: ${2:MyUser}Repository(",
-            "\t\tapiClient: ${3:MyData}Provider(httpClient: http.Client()))));",
+            "\t\trepository: ${2:MyUser}Repository()));",
             "\t}",
             "}"
         ],
@@ -571,7 +570,7 @@
             "\tint id;",
             "\tString name;",
             "",
-            "\t$1Model({ id, name });",
+            "\t$1Model({ this.id, this.name });",
             "",
             "\t$1Model.fromJson(Map<String, dynamic> json){",
             "\t\t\tthis.id = json['id'];",
