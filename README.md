@@ -41,10 +41,10 @@ dependencies:
         - /provider
           - my_provider.dart
     - /modules
-        - /my_module
-            - my_page.dart
-            - my_controller.dart
-            - my_binding.dart
+        - /module
+            - page.dart
+            - controller.dart
+            - binding.dart
             - /widgets
               - reusable_module_widget.dart
     - /global_widgets 
@@ -52,14 +52,16 @@ dependencies:
     - /routes
         - my_routes.dart
         - my_pages.dart
-    - /theme
-        - text_theme.dart   
-        - app_theme.dart  
-    - /utils
-      - /values
-        - /strings
-        - /colors
-      - /keys
+    - /core
+      - /theme
+          - text_theme.dart   
+          - app_theme.dart  
+      - /utils
+        - /values
+          - /strings
+          - /colors
+        - /keys
+        - /helpers
 - main.dart  
 # proposed by william Silva 
 
