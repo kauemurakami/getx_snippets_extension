@@ -346,12 +346,52 @@
         ],
         "description": "Generate void GetController."
     },
-    "GetVoidService Snippet": {
+    "Get RxTypes": {
+        "prefix": "getrx",
+        "body":[
+         "Rx<${1:Type}> ${2:obj} = Rx<${1:Type}>();"
+        ]
+    },
+    "Get RListxTypes": {
+        "prefix": "getrxlist",
+        "body":[
+         "RxList<Rx<${1:Type}>> ${2:obj} = RxList<Rx<${1:Type}>>();"
+        ]
+    },
+    "GetController With State Mixin Snippet": {
+        "prefix": "getcontrollerstatemixin",
+        "body": [
+            "import 'package:get/get.dart';",
+            "",
+            "class ${1:My}Controller extends GetxController whit StateMixin<${2:Type}>{",
+            "final repository;",
+            "@override",
+            "void onInit() {",
+            "\tthis.repository.getData().then((resp) {",
+            "\\ttchange(resp, status: RxStatus.success());",
+            "\t}, onError: (err) {",
+            "\t\tprint(err);",
+            "\tchange(",
+            "\t\tnull,",
+            "\t\tstatus: RxStatus.error('Error get data'),",
+            "\t);",
+            "\tsuper.onInit();",
+            "\t});",
+            "}",
+            "",
+            "}"
+        ],
+        "description": "Generate GetController with statemixin and oninit."
+    },
+    "GetService Snippet": {
         "prefix": "getservice",
         "body": [
             "import 'package:get/get.dart';",
             "",
-            "class ${1:My}Controller extends GetxService {",
+            "class ${1:My}Service extends GetxService {",
+            "\tFuture<${1:My}Service> init() async {",
+                "\t\treturn this;",
+            "\t}",
             "",
             "}"
         ],
@@ -361,13 +401,12 @@
         "prefix": "getbinding",
         "body": [
             "import 'package:get/get.dart';",
-            "import 'package:http/http.dart' as http;",
             "",
             "class ${1:MyPage}Binding implements Bindings {",
             "@override",
             "void dependencies() {",
             "\tGet.lazyPut< $1Controller>(() => $1Controller(",
-            "\t\trepository: ${2:MyUser}Repository()));",
+            "\t\trepository: ${2:My}Repository(${3:MyApiGetConnect}())));",
             "\t}",
             "}"
         ],
@@ -481,18 +520,35 @@
             "\t\treturn Scaffold(",
             "\t\tappBar: AppBar(title: Text('$1Page')),",
             "",
-            "\t\tbody: ${3:Container}(",
-            "\t\t\tchild: GetX<${4:My}Controller>(",
-            "\t\t\t\tinit: $4Controller(),",
-            "\t\t\t\tbuilder: (_){",
-            "\t\t\t\t\treturn ${5:Container}();",
-            "\t\t\t\t}),",
-            "\t\t\t),",
+            "\t\tbody: SafeArea(",
+            "\t\t\tchild: Text('${1:My}Controller'))",
             "\t\t);",
-            "\t}",
             "}"
         ],
         "description": "Generate Page."
+    },
+    "GetPageView with StateMixin Snippet": {
+        "prefix": "getpagestatemixin",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:get/get.dart';",
+            
+            "",
+            "class ${1:My}Page extends GetView<$1Controller> {",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "",
+            "\t\treturn Scaffold(",
+            "\t\tappBar: AppBar(title: Text('$1Page')),",
+            "",
+            "\t\tbody: this.controller.obx(",
+            "\t\t\tSafeArea(",
+            "\t\t\tchild: Text(state.toString()))",
+            "\t\t);",
+            "}"
+        ],
+        "description": "Generate Page with state mixin."
     },
     "GetPageVoid Snippet": {
         "prefix": "getpagevoid",
@@ -590,14 +646,13 @@
         "prefix": "getprovider",
         "body": [
             "import 'dart:convert';",
-            "import 'package:meta/meta.dart';",
             "",
             "const baseUrl = 'http://gerador-nomes.herokuapp.com/nomes/10';",
             "",
-            "class ${1:My}ApiClient extends GetConnect{",
+            "class ${1:Api} extends GetConnect {",
             "",
-            "final http.Client httpClient;",
-            "$1ApiClient({@required this.httpClient});",
+            "final api;",
+            "$1Api({@required this.api});",
             "",
             "",
             "// Get request",
@@ -655,7 +710,6 @@
     "GetRepository Snippet": {
         "prefix": "getrepository",
         "body": [
-            "import 'package:meta/meta.dart';",
             "",
             "class ${1:My}Repository {",
             "",
@@ -693,9 +747,10 @@
             "\trunApp(",
             "\t\tGetMaterialApp(",
             "\t\t\t\tdebugShowCheckedModeBanner: false,",
-            "\t\t\t\tinitialRoute: '/',",
+            "\t\t\t\tinitialRoute: '/home',",
             "\t\t\t\ttheme: appThemeData,",
             "\t\t\t\tdefaultTransition: Transition.fade,",
+            "\t\t\t\tinitialBinding: MyHomeBinding(),",
             "\t\t\t\tgetPages: AppPages.pages,",
             "\t\t\t\thome: MyHomePage(),",
             "\t\t)",
@@ -951,14 +1006,11 @@
             "import 'package:get/get.dart';",
             "import 'package:validators/validators.dart';",
             "",
-            "class ${1:Custom}Form extends StatelessWidget {",
+            "class ${1:Custom}Form extends GetView {",
             "\t@override",
             "\tWidget build(BuildContext context) {",
             "\t\tfinal GlobalKey key =  GlobalKey<FormState>();",
-            "\t\treturn GetX<${2:My}Controller>(",
-            "\t\t\tassignId: true,",
-            "\t\t\tbuilder: (_){",
-            "\t\t\t\treturn Form(",
+            "\t\treturn Form(",
             "\t\t\t\t\tkey: key,",
             "\t\t\t\t\tchild: Column(",
             "\t\t\t\t\t\tchildren: <Widget>[",
@@ -1004,9 +1056,6 @@
             "\t\t\t\t\t\t\t\tchild: Text('OK'),",
             "\t\t\t\t\t\t\t)",
             "\t\t\t\t\t\t],",
-            "\t\t\t\t\t),",
-            "\t\t\t\t);",
-            "\t\t\t}",
             "\t\t);",
             "\t}",
             "}"
