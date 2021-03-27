@@ -20,8 +20,6 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^3.2.0 ou >
-  meta: ^1.1.8
-  http: ^0.12.1 or dio: 3.x
 ```
 ## Comments
 **implementation**
@@ -33,18 +31,17 @@ dependencies:
 - /app  
     - /data
         - /services
-          - my_service.dart
-        - /repository
-          - my_repository.dart
+          - service.dart
         - /model
-          - my_model.dart
+          - model.dart
         - /provider
-          - my_provider.dart
+          - provider.dart
     - /modules
-        - /module
+        - /name_module
             - page.dart
             - controller.dart
             - binding.dart
+            - repository.dart
             - /widgets
               - reusable_module_widget.dart
     - /global_widgets 
@@ -56,12 +53,12 @@ dependencies:
       - /theme
           - text_theme.dart   
           - app_theme.dart  
-      - /utils
+        - /utils
+          - /keys
+          - /helpers
         - /values
           - /strings
           - /colors
-        - /keys
-        - /helpers
 - main.dart  
 # proposed by william Silva 
 
