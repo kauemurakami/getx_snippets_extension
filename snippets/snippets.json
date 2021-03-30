@@ -523,6 +523,7 @@
             "\t\tbody: SafeArea(",
             "\t\t\tchild: Text('${1:My}Controller'))",
             "\t\t);",
+            "\t}",
             "}"
         ],
         "description": "Generate Page."
