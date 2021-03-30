@@ -321,7 +321,6 @@
         "prefix": "getcontroller",
         "body": [
             "import 'package:get/get.dart';",
-            "import 'package:meta/meta.dart';",
             "",
             "class ${1:My}Controller extends GetxController {",
             "",
