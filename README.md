@@ -318,14 +318,16 @@ wait for the snippet, set the variable and function name and you're done !
 ### More awesome Snippets
 getrx  
 getrxlist  
+getcontrollerwithstatemixin  
+getmain  
 getpagestatemixin  
 getcontrollerstatemixins    
-getsplash
-getobxvalue
-getvaluebuilder
-getService
+getsplash  
+getobxvalue  
+getvaluebuilder  
+getService  
 getBinding  
-getSplashPage
+getSplashPage  
 getPut  
 getFind  
 getLazyPut  
