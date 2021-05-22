@@ -345,6 +345,17 @@
         ],
         "description": "Generate void GetController."
     },
+    "GetTickerProviderController Snippet": {
+        "prefix": "getcontrollerwithSingleGetTickerProviderMixin",
+        "body": [
+            "import 'package:get/get.dart';",
+            "",
+            "class ${1:My}Controller extends GetxController with SingleGetTickerProviderMixin {",
+            "",
+            "}"
+        ],
+        "description": "Generate void GetController with SingleGetTickerProviderMixin."
+    },
     "Get RxTypes": {
         "prefix": "getrx",
         "body":[
@@ -713,24 +724,24 @@
             "",
             "class ${1:My}Repository {",
             "",
-            "final ${2:My}ApiClient apiClient;",
+            "final ${2:My}Ap api;",
             "",
-            "$1Repository({@required this.apiClient}) : assert(apiClient != null);",
+            "$1Repository({@required this.api}) : assert(api != null);",
             "",
             "getAll(){",
-            "\treturn apiClient.getAll();",
+            "\treturn api.getAll();",
             "}",
             "getId(id){",
-            "\treturn apiClient.getId(id);",
+            "\treturn api.getId(id);",
             "}",
             "delete(id){",
-            "\treturn apiClient.delete(id);",
+            "\treturn api.delete(id);",
             "}",
             "edit(obj){",
-            "\treturn apiClient.edit( obj );",
+            "\treturn api.edit( obj );",
             "}",
             "add(obj){",
-            "\t\treturn apiClient.add( obj );",
+            "\t\treturn api.add( obj );",
             "}",
             "",
             "}"
@@ -1125,6 +1136,17 @@
             "}"
         ],
         "description": "Get onInit()"
+    },
+    "Get onReady()": {
+        "prefix": "getonReady",
+        "body": [
+            "@override",
+            "void onReady() {",
+            "  ${1:fetchApi}();",
+            "  super.onReady();",
+            "}"
+        ],
+        "description": "Get onReady()"
     },
     "Get onClose()": {
         "prefix": "getonClose",
