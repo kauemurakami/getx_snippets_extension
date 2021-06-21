@@ -2,7 +2,7 @@
 	"name": "get-snippets",
 	"displayName": "GetX Snippets",
 	"description": "An extension to accelerate the process of developing applications with flutter, aimed at everyone using the Get package.",
-	"version": "4.0.2",
+	"version": "4.1.0",
 	"publisher": "get-snippets",
 	"engines": {
 		"vscode": "^1.2.0"
