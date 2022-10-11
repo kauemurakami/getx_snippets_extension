@@ -324,12 +324,10 @@
             "",
             "class ${1:My}Controller extends GetxController {",
             "",
-            "final ${2:My}Repository repository;",
+            "final ${1:My}Repository repository;",
             "$1Controller(this.repository);",
             "",
-            "\tfinal _${3:obj} = ''.obs;",
-            "\tset $3(value) => this._$3.value = value;",
-            "\tget $3 => this._$3.value;",
+            "\tfinal${3:obj} = ''.obs;",
             "}"
         ],
         "description": "Generate GetController."
@@ -786,45 +784,8 @@
         ],
         "description": "Replace Main file."
     },
-    "GetGet_ Snippet": {
-        "prefix": "getget_",
-        "body": [
-            "get ${1:value} => this._$1.value;"
-        ],
-        "description": "Generate get value."
-    },
-    "GetGet_Snippet": {
-        "prefix": "getget",
-        "body": [
-            "get ${1:value} => this.$1.value;"
-        ],
-        "description": "Generate get value."
-    },
-    "GetSet_ Snippet_": {
-        "prefix": "getset_",
-        "body": [
-            "set ${1:value}(value) => this._$1.value = value;"
-        ],
-        "description": "Generate set value."
-    },
-    "GetSet Snippet": {
-        "prefix": "getset",
-        "body": [
-            "set ${1:value}(value) => this.$1.value = value;"
-        ],
-        "description": "Generate set value."
-    },
-    "GetFinal_ Snippet": {
-        "prefix": "getfinal_",
-        "body": [
-            "",
-            "final _${1:value} = ${2:''}.obs;",
-            "get $1 => this._$1.value;",
-            "set $1(value) => this._$1.value = value;",
-            ""
-        ],
-        "description": "Generate fully final, get and setter private. "
-    },
+  
+  
     "GetFinal Snippet": {
         "prefix": "getfinal",
         "body": [
@@ -834,36 +795,7 @@
         ],
         "description": "Generate simple final obs, get and setter. "
     },
-    "GetList Snippet": {
-        "prefix": "getlist",
-        "body": [
-            "",
-            "GetX<${1:My}Controller>(",
-            "",
-            "\t//autoRemove: false,",
-            "\t//assignId: false,",
-            "\tinit: $1Controller(),",
-            "\tinitState: (state){ Get.find<$1Controller>().obj = 'fast code get snittpets' ;},",
-            "\tbuilder: (_) {",
-            "\t\treturn",
-            "\t\t_.obj.isEmpty ?",
-            "\t\t\t Center(child: CircularProgressIndicator());",
-            "\t\t:",
-            "\t\tListView.separated(",
-            "\t\tseparatorBuilder: (context, index) => Divider(height: 1,),",
-            "\t\titemCount: 5,",
-            "\t\titemBuilder: (context, index){",
-            "\t\t\treturn ListTile(",
-            "\t\t\t\tonTap :(){},",
-            "\t\t\t\ttitle: Text(_.obj),",
-            "\t\t\t\tsubtitle: Text(index.toString()),",
-            "\t\t\t);",
-            "\t\t})",
-            "\t}",
-            ")"
-        ],
-        "description": "Generates a ListView with GetX widget, fully functional. "
-    },
+   
     "GetListDismissible Snippet": {
         "prefix": "getlistdismissible",
         "body": [
@@ -919,64 +851,8 @@
         ],
         "description": "Instance of your custom component. "
     },
-    "GetButton Snippet": {
-        "prefix": "getbutton",
-        "body": [
-            "",
-            "MaterialButton(",
-            "\tcolor: ${1:Colors.blue},",
-            "\tonPressed: ()=> this.controller.${2:function()},",
-            "\tsplashColor: ${3:Colors.blueGrey},",
-            "\tchild: Text('${4:OK}',",
-            "\t\tstyle: TextStyle(",
-            "\t\t\tcolor: ${5:Colors.white},",
-            "\t\t\tfontSize: ${6:16},",
-            "\t\t),",
-            "\t),",
-            "),"
-        ],
-        "description": "Generates a Standard RaisedButtom with its attributes. "
-    },
-    "GetButtonWidget Snippet": {
-        "prefix": "getbuttonwidget",
-        "body": [
-            "import 'package:flutter/material.dart';",
-            "class CustomButton extends Container {",
-            "\tfinal Function function;",
-            "\tfinal String text;",
-            "\tfinal Color color;",
-            "\tfinal Color textColor;",
-            "\tfinal Color splashColor;",
-            "\tfinal double fontSize;",
-            "",
-            "\tCustomButton({",
-            "\t\t@required this.function,",
-            "\t\t@required this.text,",
-            "\t\tthis.splashColor = Colors.blueGrey,",
-            "\t\tthis.fontSize = 16,",
-            "\t\tthis.color = Colors.blue,",
-            "\t\tthis.textColor = Colors.white,",
-            "\t});",
-            "",
-            "\t@override",
-            "\tWidget build(BuildContext context) {",
-            "\t\treturn MaterialButton(",
-            "\t\t\tsplashColor: this.splashColor,",
-            "\t\t\tonPressed: ()=> this.function(),",
-            "\t\t\tcolor: this.color,",
-            "\t\t\tchild: Text(",
-            "\t\t\t\tthis.text,",
-            "\t\t\t\tstyle: TextStyle(",
-            "\t\t\t\t\tcolor: this.textColor,",
-            "\t\t\t\t\tfontSize: this.fontSize,",
-            "\t\t\t\t),",
-            "\t\t\t),",
-            "\t\t);",
-            "\t}",
-            "}"
-        ],
-        "description": "Generate a stateless class with a RaisedButton that can be reused by more than one widget."
-    },
+   
+   
     "GetFAB Snippet": {
         "prefix": "getfab",
         "body": [
@@ -1033,9 +909,8 @@
             "import 'package:get/get.dart';",
           
             "",
-            "class ${1:Custom}Form extends Container {",
+            "class ${1:Custom}Form extends GetView<${2:Controller}> {",
             "\tfinal GlobalKey<FormState> _formKey = GlobalKey<FormState>();",
-            "\tfinal controller = Get.find<${1:Controller>();",
             "\t@override",
             "\tWidget build(BuildContext context) {",
             "\t\treturn Form(",
@@ -1178,42 +1053,42 @@
     "Get toNamed": {
         "prefix": "getToNamed",
         "body": [
-            "Get.toNamed(\"/${1:NextScreen}\");"
+            "await Get.toNamed(\"/${1:NextScreen}\");"
         ],
         "description": "Get toNamed"
     },
     "Get offNamed": {
         "prefix": "getoffNamed",
         "body": [
-            "Get.offNamed(\"/${1:NextScreen}\");"
+            "await Get.offNamed(\"/${1:NextScreen}\");"
         ],
         "description": "Get offNamed"
     },
     "Get offAllNamed": {
         "prefix": "getoffAllNamed",
         "body": [
-            "Get.offAllNamed(\"/${1:NextScreen}\");"
+            "await Get.offAllNamed(\"/${1:NextScreen}\");"
         ],
         "description": "Get offAllNamed"
     },
     "Get.to": {
         "prefix": "getTo",
         "body": [
-            "Get.to(${1:NextScreen}());"
+            "await Get.to(${1:NextScreen}());"
         ],
         "description": "Get.to"
     },
     "Get.off": {
         "prefix": "getOff",
         "body": [
-            "Get.off(${1:NextScreen}());"
+            "await Get.off(${1:NextScreen}());"
         ],
         "description": "Get.off"
     },
     "Get.offAll": {
         "prefix": "getOffAll",
         "body": [
-            "Get.offAll(${1:NextScreen}());"
+            "await Get.offAll(${1:NextScreen}());"
         ],
         "description": "Get.offAll"
     },
@@ -1245,55 +1120,6 @@
             "  onConfirm: () => print(\"Ok\"),",
             "  middleText: \"${1:Dialog made in 3 lines of code}\"",
             ");"
-        ],
-        "description": "Get defaultDialog"
-    },
-    "Get Splash Page": {
-        "prefix": "getsplashpage",
-        "body": [
-            "import 'package:flutter/material.dart';",
-            "import 'package:get/get.dart';",
-
-            "class SplashPage extends StatefulWidget {",
-
-            "@override",
-            "_SplashPageState createState() => _SplashPageState();",
-            "}",
-            "class _SplashPageState extends State<SplashPage> {",
-              "@override",
-              "void initState() {",
-              "super.initState();",
-              "Future.delayed(Duration(seconds: 2), () => Get.toNamed('login'));",
-            "}",
-
-            "@override",
-            "Widget build(BuildContext context) {",
-              "return Container(",
-                "color: Colors.white,",
-                "child: Column(children: <Widget>[",
-                  "Padding(",
-                    "padding: EdgeInsets.only(top: 200, bottom: 10),",
-                    "child: Container(",
-                      "height: 200,",
-                      "width: 200,",
-                      "/*decoration: BoxDecoration(",
-                          "image: DecorationImage(",
-                              "image: AssetImage('images/img_splash.png'),",
-                              "fit: BoxFit.fill)),*/",
-                    "),",
-                  "),",
-                  "Text(",
-                    "'CONNECT',",
-                    "style: TextStyle(",
-                        "color: Colors.greenAccent,",
-                        "fontSize: 20,",
-                        "decoration: TextDecoration.none),",
-                  "),",
-                "]),",
-              ");",
-            "}",
-          "}"
-
         ],
         "description": "Get defaultDialog"
     }
