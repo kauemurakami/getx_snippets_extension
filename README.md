@@ -26,6 +26,9 @@ dependencies:
 >Import errors can appear until all files are created. 
 >When all files are created, just import all dependencies to resolve all errors.  
 
+### New approach available
+**New approach available** -> [**minimals_architecture**](https://github.com/kauemurakami/minimals_architecture)
+
 **Proposed structure -> subsequent changes will not change the current structure**
 ```yaml
 - /app  
